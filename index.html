@@ -1,60 +1,75 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="no-js">
 <head>
 	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Nord Star - Тайный покупатель для вашего бизнеса</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+  </script>
 </head>
-<body>
+<body class="page">
 
   <header class="page-header">
     <div class="container">
+      <div class="page-header__wrap">
+        <div class="page-header__wrap col-12 row">
 
-      <p class="main-tel"><a href="tel:+78765765767">+7 (876) 576-57-67</a></p>
+          <div class="page-header__tel">
+            <a href="tel:+78765765767">+7 (876) 576-57-67</a>
+          </div>
 
-      <nav class="main-nav">
-        <button class="main-nav__toggle">Главное меню</button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link">об услуге</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link">тарифы</a>
-          </li>
-        </ul>
-      </nav>
+          <nav class="page-header__nav">
+            <ul class="page-header__nav-list">
+              <li class="page-header__nav-item">
+                <a href="#" class="page-header__nav-link">об услуге</a>
+              </li>
+              <li class="page-header__nav-item">
+                <a href="#" class="page-header__nav-link">тарифы</a>
+              </li>
+            </ul>
+          </nav>
 
-      <button class="btn-form">Узнать больше</button>
+          <a href="#" class="page-header__btn-form">Узнать больше</a>
+        </div>
+      </div>
 
     </div>
   </header>
 
   <section class="promo">
     <div class="container">
+      <div class="promo__inner row">
+        <div class="col-7">
+          <h1 class="promo__header">Тайный покупатель для вашего бизнеса</h1>
 
-      <h1 class="promo__header">Тайный покупатель для вашего бизнеса</h1>
+          <div class="promo__descr">
+            <p>Ваш бизнес глазами клиента: быстро, понятно, эффективно.</p>
+          </div>
 
-      <div class="promo__descr">
-        <p>Ваш бизнес глазами клиента: быстро, понятно, эффективно.</p>
+          <a href="#" class="promo__btn-form promo__btn-form--desc">Узнать больше</a>
+        </div>
       </div>
-
-      <button class="main-btn">Узнать больше</button>
-
     </div>
+    <a href="#" class="promo__btn-form promo__btn-form--mob">Узнать больше</a>
   </section>
 
   <section class="info">
     <div class="container">
-      <div class="info__inner">
+      <div class="info__inner row">
+        <div class="col-12 col-sm-7 info__side">
+          <div></div>
+        </div>
 
-        <h2 class="info__title">Кто он? Тайный покупатель</h2>
+        <div class="col-12 col-sm-5 info__main">
+          <h2 class="info__title">Кто он? Тайный покупатель</h2>
 
-        <div class="info__descr-text">
+          <div class="info__descr-text">
+            <p>Коммуникационное агенство Nord Star предоставляет уникальную услугу “Тайный покупатель”. Это эффективный метод для всесторонней оценки бизнеса. Оно позволяет получить максимально объективную оценку уровня обслуживания и качества.</p>
 
-          <p>Коммуникационное агенство Nord Star предоставляет уникальную услугу “Тайный покупатель”. Это эффективный метод для всесторонней оценки бизнеса. Оно позволяет получить максимально объективную оценку уровня обслуживания и качества.</p>
-
-          <p>Тайный покупатель — это человек, который владеет полной информацией о товаре или услуги и может всесторонне оценить качество. Проверка включает в себя заполнение анкеты тайного покупателя и посещение торговой точки по прописанному сценарию.</p>
-
+            <p>Тайный покупатель — это человек, который владеет полной информацией о товаре или услуги и может всесторонне оценить качество. Проверка включает в себя заполнение анкеты тайного покупателя и посещение торговой точки по прописанному сценарию.</p>
+          </div>
         </div>
 
       </div>
@@ -64,7 +79,7 @@
   <section class="reasons">
     <div class="container">
 
-      <div class="reasons__inner-item">
+      <div class="reasons__inner-item col-sm-5 offset-sm-7">
 
         <h2 class="reasons__title">Это нужно вашему бизнесу</h2>
 
@@ -76,19 +91,19 @@
 
       <div class="reasons__inner-list">
 
-        <div class="reasons__item">
+        <div class="reasons__item col-sm-5 offset-sm-7">
           <p>У вас есть подозрения о некачественном сервисе в вашем бизнесе?</p>
         </div>
 
-        <div class="reasons__item">
-          <p>У вас есть подозрения о некачественном сервисе в вашем бизнесе?</p>
+        <div class="reasons__item col-sm-5">
+          <p>Маленький средний чек и вы чувствуете, что причина в персонале?</p>
         </div>
 
-        <div class="reasons__item">
-          <p>У вас есть подозрения о некачественном сервисе в вашем бизнесе?</p>
+        <div class="reasons__item col-sm-5 offset-sm-7">
+          <p>Не уверены в лояльности сотрудников?</p>
         </div>
 
-        <div class="reasons__item">
+        <div class="reasons__item col-sm-5">
           <p>Ваши сайты не конвертят? Хотя кажется, что все понятно.</p>
         </div>
 

@@ -1,0 +1,13 @@
+.page {
+  background-image:
+    url('../img/backgr.png'),
+    url('../img/bg-1.svg'),
+    url('../img/bg-2.svg'),
+    url('../img/bg-3.svg');
+  background-repeat:
+    repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat;
+  background-position: right -100px;
+}

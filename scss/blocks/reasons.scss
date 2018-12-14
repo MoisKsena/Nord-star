@@ -1,0 +1,27 @@
+.reasons {
+
+  @media (min-width: 768px) {
+    margin-top: -440px;
+  }
+
+  &__item:first-child {
+
+    @media (min-width: 768px) {
+      background-image: url('../img/reasons__item_1.svg');
+      background-position:
+        left 0     top 0;
+      width: 917px;
+      height: 158px;
+      background-size: contain;
+      background-repeat: no-repeat;
+       {
+    }
+  }
+
+  &__item {
+    p {
+        vertical-align: middle;
+
+    }
+  }
+}
