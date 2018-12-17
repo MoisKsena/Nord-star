@@ -4,6 +4,11 @@
     margin-top: -440px;
   }
 
+  &__inner-list {
+    margin-top: 150px;
+    overflow: hidden;
+  }
+
   &__item:first-child {
 
     @media (min-width: 768px) {
@@ -14,14 +19,53 @@
       height: 158px;
       background-size: contain;
       background-repeat: no-repeat;
-       {
+      margin-left: 56%;
     }
   }
 
   &__item {
     p {
-        vertical-align: middle;
+        padding: 50px 30px;
+        color: $white;
+    }
+  }
 
+
+  &__item:nth-child(2) {
+
+    @media (min-width: 768px) {
+      background-image: url('../img/reasons__item_2.svg');
+      background-position:
+        left 0     top 0;
+      width: 917px;
+      height: 158px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+  &__item:nth-child(3) {
+
+    @media (min-width: 768px) {
+      background-image: url('../img/reasons__item_3.svg');
+      background-position:
+        left 0     top 0;
+      width: 917px;
+      height: 158px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-left: 56%;
+    }
+  }
+  &__item:nth-child(4) {
+
+    @media (min-width: 768px) {
+      background-image: url('../img/reasons__item_4.svg');
+      background-position:
+        left 0     top 0;
+      width: 917px;
+      height: 158px;
+      background-size: contain;
+      background-repeat: no-repeat;
     }
   }
 }

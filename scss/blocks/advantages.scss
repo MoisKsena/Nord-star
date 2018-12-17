@@ -1,0 +1,60 @@
+.advantages {
+
+    @media (min-width: 768px) {
+      margin-top: 200px;
+    }
+
+  &__title {
+
+    @media (min-width: 768px) {
+      margin-bottom: 100px;
+    }
+  }
+
+  &-item {
+    &__img1 {
+
+      @media (min-width: 768px) {
+        background-image:
+        url('../img/advantages-item_1.svg'),
+        url('../img/advantages-item_bg_1.svg');
+        background-position:
+        left 37px    bottom 0,
+        left -78px bottom -30px;
+        width: 350px;
+        height: 450px;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &__img2 {
+
+      @media (min-width: 768px) {
+        background-image:
+        url('../img/advantages-item_2.svg'),
+        url('../img/advantages-item_bg_2.svg');
+        background-position:
+        left 65px    bottom 0,
+        left 30px bottom 11px;
+        width: 350px;
+        height: 450px;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &__img3 {
+
+      @media (min-width: 768px) {
+        background-image:
+        url('../img/advantages-item_3.svg'),
+        url('../img/advantages-item_bg_3.svg');
+        background-position:
+        left 50px    bottom 0,
+        left -35px bottom -35px;
+        width: 350px;
+        height: 450px;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}

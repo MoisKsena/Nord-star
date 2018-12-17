@@ -23,7 +23,7 @@
           <nav class="page-header__nav">
             <ul class="page-header__nav-list">
               <li class="page-header__nav-item">
-                <a href="#" class="page-header__nav-link">об услуге</a>
+                <a href="#info" class="page-header__nav-link">об услуге</a>
               </li>
               <li class="page-header__nav-item">
                 <a href="#" class="page-header__nav-link">тарифы</a>
@@ -48,14 +48,14 @@
             <p>Ваш бизнес глазами клиента: быстро, понятно, эффективно.</p>
           </div>
 
-          <a href="#" class="promo__btn-form promo__btn-form--desc">Узнать больше</a>
+          <a href="#" class="promo__btn-form promo__btn-form--desc">Заказать услугу</a>
         </div>
       </div>
     </div>
     <a href="#" class="promo__btn-form promo__btn-form--mob">Узнать больше</a>
   </section>
 
-  <section class="info">
+  <section class="info" id="info">
     <div class="container">
       <div class="info__inner row">
         <div class="col-12 col-sm-7 info__side">
@@ -91,19 +91,19 @@
 
       <div class="reasons__inner-list">
 
-        <div class="reasons__item col-sm-5 offset-sm-7">
+        <div class="reasons__item col-sm-5" data-aos="fade-left" data-aos-duration="2000">
           <p>У вас есть подозрения о некачественном сервисе в вашем бизнесе?</p>
         </div>
 
-        <div class="reasons__item col-sm-5">
+        <div class="reasons__item col-sm-5" data-aos="fade-right" data-aos-duration="2000">
           <p>Маленький средний чек и вы чувствуете, что причина в персонале?</p>
         </div>
 
-        <div class="reasons__item col-sm-5 offset-sm-7">
+        <div class="reasons__item col-sm-5" data-aos="fade-left" data-aos-duration="2000">
           <p>Не уверены в лояльности сотрудников?</p>
         </div>
 
-        <div class="reasons__item col-sm-5">
+        <div class="reasons__item col-sm-5" data-aos="fade-right" data-aos-duration="2000">
           <p>Ваши сайты не конвертят? Хотя кажется, что все понятно.</p>
         </div>
 
@@ -115,10 +115,14 @@
   <section class="resume">
     <div class="container">
 
-      <h2 class="resume__title">Мы считаем, что ...</h2>
+      <div class="resume__inner col-sm-5 offset-sm-7">
 
-      <div class="resume__descr">
-        <p>Самое главное в тайном аудите — это персонал, который проводит проверку. А также, грамотный менеджер, который приведет вашу компанию к качественной работе.</p>
+        <h2 class="resume__title">Мы считаем, что ...</h2>
+
+        <div class="resume__descr">
+          <p>Самое главное в тайном аудите — это персонал, который проводит проверку. А также, грамотный менеджер, который приведет вашу компанию к качественной работе.</p>
+        </div>
+
       </div>
 
     </div>
@@ -127,28 +131,28 @@
   <section class="advantages">
     <div class="container">
 
-      <h2 class="advantages__title">3 причины, почему вы можете нам доверять</h2>
+      <h2 class="advantages__title col-sm-7">3 причины, почему вы можете нам доверять</h2>
 
-      <div class="advantages__inner">
+      <div class="advantages__inner row">
 
-        <article class="advantages-item">
-          <img src="#" alt="Картинка карточки" class="advantages-item__img">
+        <article class="advantages-item col-sm-4">
+          <div class="advantages-item__img1"></div>
           <h3 class="advantages-item__title">Свой штат сотрудников</h3>
           <div class="advantages-item__descr">
             <p>у нас есть собственная база тайных покупателей, в квалификации которых мы уверены</p>
           </div>
         </article>
 
-        <article class="advantages-item">
-          <img src="#" alt="Картинка карточки" class="advantages-item__img">
+        <article class="advantages-item col-sm-4">
+          <div class="advantages-item__img2"></div>
           <h3 class="advantages-item__title">Индивидуальный подбор</h3>
           <div class="advantages-item__descr">
             <p>если в штате нет подходящего сотрудника — его профессионализм и экспертность проверяем на собеседовании</p>
           </div>
         </article>
 
-        <article class="advantages-item">
-          <img src="#" alt="Картинка карточки" class="advantages-item__img">
+        <article class="advantages-item col-sm-4">
+          <div class="advantages-item__img3"></div>
           <h3 class="advantages-item__title">Особый подход к каждому</h3>
           <div class="advantages-item__descr">
             <p>ценим индивидуальный подход и разрабатываем сценарии проверок исключительно под ваш бизнес</p>
@@ -160,6 +164,61 @@
     </div>
   </section>
 
+  <section class="about">
+    <div class="container">
+      <div class="row">
+
+
+        <div class="about__title col-sm-6">
+          <h2 class="about__title-item">Как строится работа?</h2>
+          <p class="about__title-descr">Все очень просто, логично и лояльно.</p>
+
+
+        <div class="about__main">
+          <div class="about__main-item">
+
+            <span>01.</span>
+            <p>Вы оставляете заявку на услугу</p>
+          </div>
+          <div class="about__main-item">
+            <span>02.</span>
+            <p>Мы делаем коммерческое предложение</p>
+          </div>
+          <div class="about__main-item">
+            <span>03.</span>
+            <p>Согласовываем и подписываем договор</p>
+          </div>
+          <div class="about__main-item">
+            <span>04.</span>
+            <p>Вы вносите предоплату</p>
+          </div>
+          <div class="about__main-item">
+            <span>05.</span>
+            <p>Мы проводим проверку</p>
+          </div>
+          <div class="about__main-item">
+            <span>06.</span>
+            <p>Предоставляем вам отчет</p>
+          </div>
+          <div class="about__main-item">
+            <span>07.</span>
+            <p>Вы вносите постоплату</p>
+          </div>
+        </div>
+        </div>
+        <div class="col-sm-6 about__side-wrap">
+          <div class="about__side">
+            <div></div>
+          </div>
+        </div>
+
+    </div>
+    </div>
+  </section>
+
+
+
+  <script src="js/aos.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
