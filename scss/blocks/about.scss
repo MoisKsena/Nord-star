@@ -1,34 +1,57 @@
+
+
 .about {
+  position: relative;
+
+  &__main {
+
+    @media (min-width: 768px) {
+      padding-top: 450px;
+    }
+  }
 
   &__side-wrap {
-    position: relative;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 98vh;
   }
 
   &__side {
     // position: fixed;
     top: 0;
-    z-index: -2;
+    // z-index: -2;
 
 
     @media (min-width: 768px) {
       background-image:
-        url('../img/about_girl.svg'),
-        url('../img/about_bg_1.svg'),
-        url('../img/about_bg_2.svg'),
-        url('../img/info_bg_3.svg'),
-        url('../img/info_bg_4.svg');
-        background-repeat: no-repeat;
+        url('../img/about_bg_3.png'),
+        url('../img/about_bg_4.png'),
+        url('../img/about_bg_2.png'),
+        url('../img/about_bg_1.png'),
+        url('../img/about_girl.png'),
+        url('../img/about_bg.png');
+      background-repeat: no-repeat;
+      background-size:
+      5% 4%,
+      10% 8%,
+      45% 37%,
+      80% 60%,
+      20% 50%,
+      50% 80%;
       background-position:
-        left 125px bottom 0,
-        left 95px    top 295px,
-        left -77px     top -31px,
-        left 415px     top 565px,
-        left 370px     top 640px;
-      padding-bottom: 50px;
+        left 55% bottom 45%,
+        left 67% bottom 52%,
+        left 50%    top 25%,
+        left 52%     top -13%,
+        left 38% bottom 0,
+        left 50% bottom 20%;
+      // padding-bottom: 50px;
       width: 100%;
-      // height: 100vh;
+      height: 100%;
       // padding-top: 250px;
-      padding-left: 50px;
+      // padding-left: 50px;
     }
 
     div {
@@ -37,11 +60,11 @@
       @media (min-width: 768px) {
         display: block;
         width: 462px;
-        // height: 998px;
+        height: 998px;
         background: #4B2DA0;
-        position: absolute;
-        height: 100vh;
-        z-index: -10;
+        // position: absolute;
+        position: relative;
+        // z-index: -10;
       }
     }
   }
@@ -62,4 +85,15 @@
       }
     }
   }
+}
+
+
+.fixed {
+  position: fixed;
+  top: 0;
+}
+.bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }

@@ -56,5 +56,20 @@
         background-repeat: no-repeat;
       }
     }
+
+    &__title {
+
+      @media (min-width: 768px) {
+        color: #4B2DA0;
+        padding-left: 20%;
+      }
+    }
+
+    &__descr {
+
+      @media (min-width: 768px) {
+        padding-left: 20%;
+      }
+    }
   }
 }
