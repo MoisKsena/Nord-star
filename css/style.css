@@ -2500,9 +2500,6 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         -webkit-transform: perspective(2500px) rotateX(0);
                 transform: perspective(2500px) rotateX(0); } }
 
-@-ms-viewport {
-  width: device-width; }
-
 @font-face {
   font-family: 'Ubuntu-bold';
   src: url("../fonts/subset-Ubuntu-Bold.woff2") format("woff2"), url("../fonts/subset-Ubuntu-Bold.woff") format("woff");
@@ -2742,13 +2739,14 @@ pre {
     -o-tab-size: 2;
        tab-size: 2; }
 
-.page {
-  background-image: url("../img/backgr.png"), url("../img/bg-1.svg"), url("../img/bg-2.svg"), url("../img/bg-3.svg");
-  background-repeat: repeat, no-repeat, no-repeat, no-repeat;
-  background-position: right -100px; }
+@media (min-width: 1200px) {
+  .page {
+    background-image: url("../img/backgr.png"), url("../img/bg-1.svg"), url("../img/bg-2.svg"), url("../img/bg-3.svg");
+    background-repeat: repeat, no-repeat, no-repeat, no-repeat;
+    background-size: auto, 65% auto, 70% auto, 70% auto;
+    background-position: right -100px; } }
 
 .page-header {
-  font-size: 20px;
   padding-top: 55px; }
   @media (min-width: 768px) {
     .page-header__wrap {
@@ -2792,10 +2790,8 @@ pre {
   padding-top: 300px; }
   @media (min-width: 1200px) {
     .promo {
-      background-position: right 100px center; } }
-  @media (min-width: 1400px) {
-    .promo {
-      background-position: right 200px center; } }
+      background-position: right 50px center;
+      background-size: 325px auto; } }
   .promo__header {
     font-weight: bold;
     line-height: 81px;
@@ -2856,8 +2852,7 @@ pre {
         -webkit-transition: all 0.3s;
         transition: all 0.3s;
         font-size: 24px;
-        width: auto;
-        padding: 0 200px; }
+        width: 500px; }
         .promo__btn-form:hover, .promo__btn-form:active {
           color: #fff; } }
 

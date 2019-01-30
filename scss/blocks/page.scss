@@ -1,13 +1,21 @@
 .page {
-  background-image:
-    url('../img/backgr.png'),
-    url('../img/bg-1.svg'),
-    url('../img/bg-2.svg'),
-    url('../img/bg-3.svg');
-  background-repeat:
-    repeat,
-    no-repeat,
-    no-repeat,
-    no-repeat;
-  background-position: right -100px;
+
+  @media (min-width: $screen-lg) {
+    background-image:
+      url('../img/backgr.png'),
+      url('../img/bg-1.svg'),
+      url('../img/bg-2.svg'),
+      url('../img/bg-3.svg');
+    background-repeat:
+      repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat;
+    background-size:
+      auto,
+      65% auto,
+      70% auto,
+      70% auto;
+    background-position: right -100px;
+  }
 }

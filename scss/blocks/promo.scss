@@ -4,12 +4,9 @@
   background-position: right -100px center;
   padding-top: 300px;
 
-  @media (min-width: 1200px) {
-     background-position: right 100px center;
-  }
-
-  @media (min-width: 1400px) {
-     background-position: right 200px center;
+  @media (min-width: $screen-lg) {
+     background-position: right 50px center;
+     background-size: 325px auto;
   }
 
   &__header {
@@ -85,8 +82,8 @@
       color: $black;
       transition: all 0.3s;
       font-size: 24px;
-      width: auto;
-      padding: 0 200px;
+      width: 500px;
+      // padding: 0 200px;
 
       &:hover,
       &:active {

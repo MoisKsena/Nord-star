@@ -1,21 +1,21 @@
 
+$white: #ffffff;
+$black: #232323;
 
-$white:                #ffffff;
-$black:                #232323;
-
-$text-color:           $black;
+$text-color: $black;
 
 // $font-family-bold:     Ubuntu-bold, sans-serif;
 // $font-family-regular:  Ubuntu-regular, sans-serif;
-$font-family:          Ubuntu-regular, sans-serif;
-$font-size:            20px;
-$font-size-xs:         24px;
-$font-size-h1:         72px;
-$font-size-h1-mobile:  64px;
-$line-height:          1.4;
+$font-family: Ubuntu-regular, sans-serif;
+$font-size: 20px;
+$font-size-xs: 24px;
+$font-size-h1: 72px;
+$font-size-h1-mobile: 64px;
+$line-height: 1.4;
 
-$screen-xs:            480px;
-$screen-sm:            768px;
-$screen-md:            992px;
-$screen-lg:            1200px;
-$screen-xl:            1920px;
+
+$screen-xs: 480px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;
+$screen-xl: 1920px;
