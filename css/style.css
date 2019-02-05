@@ -2739,12 +2739,17 @@ pre {
     -o-tab-size: 2;
        tab-size: 2; }
 
-@media (min-width: 1200px) {
-  .page {
-    background-image: url("../img/backgr.png"), url("../img/bg-1.svg"), url("../img/bg-2.svg"), url("../img/bg-3.svg");
-    background-repeat: repeat, no-repeat, no-repeat, no-repeat;
-    background-size: auto, 65% auto, 70% auto, 70% auto;
-    background-position: right -100px; } }
+.page {
+  background-image: url("../img/backgr.png"), url("../img/bg-1.svg"), url("../img/bg-2.svg"), url("../img/bg-3.svg");
+  background-repeat: repeat, no-repeat, no-repeat, no-repeat;
+  background-size: auto, 180% auto, 120% auto, 90% auto;
+  background-position: right top, right -100px top -50px, right -100px top -50px, right -100px top -50px; }
+  @media (min-width: 992px) {
+    .page {
+      background-image: url("../img/backgr.png"), url("../img/bg-1.svg"), url("../img/bg-2.svg"), url("../img/bg-3.svg");
+      background-repeat: repeat, no-repeat, no-repeat, no-repeat;
+      background-size: auto, 60% auto, 45% auto, 35% auto;
+      background-position: right 0 top; } }
 
 .page-header {
   padding-top: 55px; }
@@ -2786,23 +2791,22 @@ pre {
 .promo {
   background-image: url(../img/promo-img.svg);
   background-repeat: no-repeat;
-  background-position: right -100px center;
-  padding-top: 300px; }
-  @media (min-width: 1200px) {
+  background-position: right -80px top 80px;
+  background-size: 225px auto; }
+  @media (min-width: 992px) {
     .promo {
       background-position: right 50px center;
       background-size: 325px auto; } }
   .promo__header {
     font-weight: bold;
-    line-height: 81px;
-    font-size: 64px;
-    margin-bottom: 70px; }
-    @media (min-width: 768px) {
+    font-size: 28px;
+    margin-bottom: 70px;
+    margin-top: 180px; }
+    @media (min-width: 992px) {
       .promo__header {
         font-size: 72px; } }
   .promo__descr {
-    line-height: 36px;
-    font-size: 24px;
+    font-size: 14px;
     color: rgba(35, 35, 35, 0.5);
     margin-bottom: 80px; }
     @media (min-width: 768px) {
@@ -2903,13 +2907,12 @@ pre {
         padding-bottom: 0;
         margin-bottom: 250px; } }
   .info__title {
+    width: 90%;
     font-weight: bold;
-    line-height: 81px;
-    font-size: 64px;
+    font-size: 28px;
     color: #232323; }
   .info__descr-text {
-    line-height: 39px;
-    font-size: 20px;
+    font-size: 14px;
     color: #232323; }
 
 .reasons {

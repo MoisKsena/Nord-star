@@ -1,6 +1,26 @@
 .page {
+  background-image:
+    url('../img/backgr.png'),
+    url('../img/bg-1.svg'),
+    url('../img/bg-2.svg'),
+    url('../img/bg-3.svg');
+  background-repeat:
+    repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat;
+  background-size:
+    auto,
+    180% auto,
+    120% auto,
+    90% auto;
+  background-position:
+    right top,
+    right -100px top -50px,
+    right -100px top -50px,
+    right -100px top -50px;
 
-  @media (min-width: $screen-lg) {
+  @media (min-width: $screen-md) {
     background-image:
       url('../img/backgr.png'),
       url('../img/bg-1.svg'),
@@ -13,9 +33,9 @@
       no-repeat;
     background-size:
       auto,
-      65% auto,
-      70% auto,
-      70% auto;
-    background-position: right -100px;
+      60% auto,
+      45% auto,
+      35% auto;
+    background-position: right 0 top;
   }
 }
