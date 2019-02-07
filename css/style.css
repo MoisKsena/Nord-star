@@ -2741,14 +2741,14 @@ pre {
 
 .page {
   background-image: url("../img/backgr.png"), url("../img/bg-1.svg"), url("../img/bg-2.svg"), url("../img/bg-3.svg");
-  background-repeat: repeat, no-repeat, no-repeat, no-repeat;
-  background-size: auto, 180% auto, 120% auto, 90% auto;
-  background-position: right top, right -100px top -50px, right -100px top -50px, right -100px top -50px; }
+  background-repeat: repeat, no-repeat, no-repeat, no-repeat;
+  background-size: auto, 180% auto, 120% auto, 90% auto;
+  background-position: right top, right -100px top -50px, right -100px top -50px, right -100px top -50px; }
   @media (min-width: 992px) {
     .page {
       background-image: url("../img/backgr.png"), url("../img/bg-1.svg"), url("../img/bg-2.svg"), url("../img/bg-3.svg");
-      background-repeat: repeat, no-repeat, no-repeat, no-repeat;
-      background-size: auto, 60% auto, 45% auto, 35% auto;
+      background-repeat: repeat, no-repeat, no-repeat, no-repeat;
+      background-size: auto, 60% auto, 45% auto, 35% auto;
       background-position: right 0 top; } }
 
 .page-header {
@@ -2877,13 +2877,13 @@ pre {
         -ms-flex-order: 1;
             order: 1;
     background-image: url("../img/man.svg"), url("../img/info_bg_1.svg"), url("../img/info_bg_2.svg"), url("../img/info_bg_3.svg"), url("../img/info_bg_4.svg");
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
     background-position: left 40px bottom 0;
     padding-bottom: 30px; }
     @media (min-width: 768px) {
       .info__side {
         background-image: url("../img/man_2.svg"), url("../img/info_bg_2.svg"), url("../img/info_bg_1.svg"), url("../img/info_bg_3.svg"), url("../img/info_bg_4.svg");
-        background-position: left 168px bottom 0, left -108px    top 100px, left -79px     top 100px, left 124px     top 800px, left 200px     top 900px;
+        background-position: left 168px bottom 0, left -108px    top 100px, left -79px     top 100px, left 124px     top 800px, left 200px     top 900px;
         -webkit-box-ordinal-group: 1;
             -ms-flex-order: 0;
                 order: 0;
@@ -2975,7 +2975,7 @@ pre {
 @media (min-width: 768px) {
   .advantages-item__img1 {
     background-image: url("../img/advantages-item_1.svg"), url("../img/advantages-item_bg_1.svg");
-    background-position: left 37px    bottom 0, left -78px bottom -30px;
+    background-position: left 37px    bottom 0, left -78px bottom -30px;
     width: 350px;
     height: 450px;
     background-repeat: no-repeat; } }
@@ -2983,7 +2983,7 @@ pre {
 @media (min-width: 768px) {
   .advantages-item__img2 {
     background-image: url("../img/advantages-item_2.svg"), url("../img/advantages-item_bg_2.svg");
-    background-position: left 65px    bottom 0, left 30px bottom 11px;
+    background-position: left 65px    bottom 0, left 30px bottom 11px;
     width: 350px;
     height: 450px;
     background-repeat: no-repeat; } }
@@ -2991,7 +2991,7 @@ pre {
 @media (min-width: 768px) {
   .advantages-item__img3 {
     background-image: url("../img/advantages-item_3.svg"), url("../img/advantages-item_bg_3.svg");
-    background-position: left 50px    bottom 0, left -35px bottom -35px;
+    background-position: left 50px    bottom 0, left -35px bottom -35px;
     width: 350px;
     height: 450px;
     background-repeat: no-repeat; } }
@@ -3022,8 +3022,8 @@ pre {
       .about__side {
         background-image: url("../img/about_bg_3.png"), url("../img/about_bg_4.png"), url("../img/about_bg_2.png"), url("../img/about_bg_1.png"), url("../img/about_girl.png"), url("../img/about_bg.png");
         background-repeat: no-repeat;
-        background-size: 5% 4%, 10% 8%, 45% 37%, 80% 60%, 20% 50%, 50% 80%;
-        background-position: left 55% bottom 45%, left 67% bottom 52%, left 50%    top 25%, left 52%     top -13%, left 38% bottom 0, left 50% bottom 20%;
+        background-size: 5% 4%, 10% 8%, 45% 37%, 80% 60%, 20% 50%, 50% 80%;
+        background-position: left 55% bottom 45%, left 67% bottom 52%, left 50%    top 25%, left 52%     top -13%, left 38% bottom 0, left 50% bottom 20%;
         width: 100%;
         height: 100%; } }
     .about__side div {
@@ -3062,20 +3062,138 @@ pre {
     background-image: url("../img/tariff-item_bg_11.png"), url("../img/tariff-item_bg_12.png");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: left 38% bottom 0, left 50% bottom 20%; } }
+    background-position: left 38% bottom 0, left 50% bottom 20%; } }
 
 @media (min-width: 768px) {
   .tariff-item:nth-child(2) {
     background-image: url("../img/tariff-item_bg_21.png"), url("../img/tariff-item_bg_22.png");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: left 38% bottom 0, left 50% bottom 20%; } }
+    background-position: left 38% bottom 0, left 50% bottom 20%; } }
 
 @media (min-width: 768px) {
   .tariff-item:nth-child(3) {
     background-image: url("../img/tariff-item_bg_31.png"), url("../img/tariff-item_bg_32.png");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: left 38% bottom 0, left 50% bottom 20%; } }
+    background-position: left 38% bottom 0, left 50% bottom 20%; } }
+
+.feedback__wrap {
+  position: relative;
+  padding-top: 252px; }
+
+.feedback__title {
+  width: 501px;
+  height: 140px;
+  margin-bottom: 226px; }
+
+.feedback__img {
+  position: absolute;
+  right: 0;
+  top: 77.49%;
+  bottom: 16.98%;
+  background-image: url("../img/feedback.png");
+  background-repeat: no-repeat;
+  width: 705px;
+  height: 812px; }
+
+.feedback__reviews {
+  margin-right: 242px; }
+
+.feedback__item:nth-child(2) {
+  display: none; }
+
+.feedback__item:nth-child(3) {
+  display: none; }
+
+.feedback__item-descr {
+  font-weight: bold; }
+
+.feedback__item-text {
+  width: 485px;
+  height: 316px; }
+
+.orderform__title {
+  width: 982px;
+  height: 195px;
+  margin-top: 301px;
+  margin-bottom: 143px; }
+
+.orderform__form {
+  margin: 0;
+  width: 1415px;
+  height: 546px; }
+
+.orderform__form-input {
+  margin: 0;
+  width: 639px;
+  height: 79px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  color: #232323;
+  opacity: 0.5;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 36px; }
+
+.orderform__form-input:nth-child(1) {
+  margin-right: 128px; }
+
+.orderform__form-input:nth-child(3) {
+  margin-right: 128px; }
+
+.orderform__button-button {
+  width: 601px;
+  height: 128px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 24px; }
+
+.orderform__button-text {
+  width: 401px;
+  height: 71px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 27px;
+  font-size: 18px;
+  margin-top: 59px;
+  margin-bottom: 614px;
+  margin-left: 10px; }
+
+.orderform__button-textlink {
+  text-decoration: none;
+  color: #6A48DC; }
+
+.orderform__img {
+  background-image: url("../img/orderform.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 1002px;
+  height: 1181.35px;
+  right: 0;
+  top: 9000px; }
+
+.footer {
+  margin-top: 193px; }
+  .footer__wrap {
+    height: 39px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .footer__tel a {
+    text-decoration: none;
+    color: #232323;
+    opacity: 0.5; }
+
+.footer_adress {
+  color: #232323;
+  opacity: 0.5; }
 
 /*# sourceMappingURL=style.css.map */
