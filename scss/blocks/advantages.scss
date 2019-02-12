@@ -1,17 +1,28 @@
 .advantages {
+  @media (min-width: 1200px) {
+    margin-top: 326px;
+  }
 
-    @media (min-width: 768px) {
-      margin-top: 200px;
-    }
+  @media (min-width: 768px) {
+    margin-top: 200px;
+  }
 
   &__title {
+    margin-bottom: 0;
+    padding: 0;
 
     @media (min-width: 768px) {
       margin-bottom: 100px;
     }
   }
 
+  &__inner{
+    margin-top: 100px;
+  }
+
   &-item {
+    margin-top: 158px;
+
     &__img1 {
 
       @media (min-width: 768px) {
@@ -58,8 +69,9 @@
     }
 
     &__title {
-      margin: 0;
+      margin-top: 50px;
       padding: 0;
+      font-family: $font-family-bold;
 
       @media (min-width: 768px) {
         color: #4B2DA0;
@@ -68,10 +80,26 @@
     }
 
     &__descr {
+      margin-top: 61px;
 
       @media (min-width: 768px) {
         padding-left: 20%;
       }
+    }
+
+    &__descr p:nth-child(1){
+      width: 374px;
+      height: 93px;
+    }
+
+    &__descr p:nth-child(2){
+      width: 357px;
+      height: 120px;
+    }
+
+    &__descr p:nth-child(1){
+      width: 374px;
+      height: 93px;
     }
   }
 }

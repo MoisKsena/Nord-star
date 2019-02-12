@@ -2,6 +2,7 @@
 
 .about {
   position: relative;
+  margin-top: 250px;
 
   &__main {
 
@@ -70,18 +71,30 @@
   }
 
   &__main {
-    &-item{
+    margin-top: 200px;
 
+    &-item{
       @media (min-width: 768px) {
-      margin-top: 30px;
+        margin-top: 30px;
       }
 
       span {
+        font-family: $font-family-bold;
+        font-size: 72px;
+
         @media (min-width: 768px) {
-        font-weight: bold;
-        line-height: 30px;
-        color: #4B2DA0;
+          font-weight: bold;
+          line-height: 30px;
+          color: #4B2DA0;
         }
+      }
+
+      p {
+        width: 385px;
+        height: 104px;
+        margin-top: 31px;
+        font-family: $font-family-medium;
+        font-size: 48px;
       }
     }
   }

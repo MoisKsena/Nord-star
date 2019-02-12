@@ -3028,52 +3028,73 @@ pre {
   height: 135px;
   line-height: 1.8; }
 
+@media (min-width: 1200px) {
+  .advantages {
+    margin-top: 326px; } }
+
 @media (min-width: 768px) {
   .advantages {
     margin-top: 200px; } }
 
-@media (min-width: 768px) {
-  .advantages__title {
-    margin-bottom: 100px; } }
-
-@media (min-width: 768px) {
-  .advantages-item__img1 {
-    background-image: url("../img/advantages-item_1.svg"), url("../img/advantages-item_bg_1.svg");
-    background-position: left 37px    bottom 0, left -78px bottom -30px;
-    width: 350px;
-    height: 450px;
-    background-repeat: no-repeat; } }
-
-@media (min-width: 768px) {
-  .advantages-item__img2 {
-    background-image: url("../img/advantages-item_2.svg"), url("../img/advantages-item_bg_2.svg");
-    background-position: left 65px    bottom 0, left 30px bottom 11px;
-    width: 350px;
-    height: 450px;
-    background-repeat: no-repeat; } }
-
-@media (min-width: 768px) {
-  .advantages-item__img3 {
-    background-image: url("../img/advantages-item_3.svg"), url("../img/advantages-item_bg_3.svg");
-    background-position: left 50px    bottom 0, left -35px bottom -35px;
-    width: 350px;
-    height: 450px;
-    background-repeat: no-repeat; } }
-
-.advantages-item__title {
-  margin: 0;
+.advantages__title {
+  margin-bottom: 0;
   padding: 0; }
   @media (min-width: 768px) {
-    .advantages-item__title {
-      color: #4B2DA0;
-      padding-left: 20%; } }
+    .advantages__title {
+      margin-bottom: 100px; } }
 
-@media (min-width: 768px) {
+.advantages__inner {
+  margin-top: 100px; }
+
+.advantages-item {
+  margin-top: 158px; }
+  @media (min-width: 768px) {
+    .advantages-item__img1 {
+      background-image: url("../img/advantages-item_1.svg"), url("../img/advantages-item_bg_1.svg");
+      background-position: left 37px    bottom 0, left -78px bottom -30px;
+      width: 350px;
+      height: 450px;
+      background-repeat: no-repeat; } }
+  @media (min-width: 768px) {
+    .advantages-item__img2 {
+      background-image: url("../img/advantages-item_2.svg"), url("../img/advantages-item_bg_2.svg");
+      background-position: left 65px    bottom 0, left 30px bottom 11px;
+      width: 350px;
+      height: 450px;
+      background-repeat: no-repeat; } }
+  @media (min-width: 768px) {
+    .advantages-item__img3 {
+      background-image: url("../img/advantages-item_3.svg"), url("../img/advantages-item_bg_3.svg");
+      background-position: left 50px    bottom 0, left -35px bottom -35px;
+      width: 350px;
+      height: 450px;
+      background-repeat: no-repeat; } }
+  .advantages-item__title {
+    margin-top: 50px;
+    padding: 0;
+    font-family: Ubuntu-Bold, sans-serif; }
+    @media (min-width: 768px) {
+      .advantages-item__title {
+        color: #4B2DA0;
+        padding-left: 20%; } }
   .advantages-item__descr {
-    padding-left: 20%; } }
+    margin-top: 61px; }
+    @media (min-width: 768px) {
+      .advantages-item__descr {
+        padding-left: 20%; } }
+  .advantages-item__descr p:nth-child(1) {
+    width: 374px;
+    height: 93px; }
+  .advantages-item__descr p:nth-child(2) {
+    width: 357px;
+    height: 120px; }
+  .advantages-item__descr p:nth-child(1) {
+    width: 374px;
+    height: 93px; }
 
 .about {
-  position: relative; }
+  position: relative;
+  margin-top: 250px; }
   @media (min-width: 768px) {
     .about__main {
       padding-top: 450px; } }
@@ -3102,14 +3123,25 @@ pre {
           height: 998px;
           background: #4B2DA0;
           position: relative; } }
-  @media (min-width: 768px) {
-    .about__main-item {
-      margin-top: 30px; } }
-  @media (min-width: 768px) {
+  .about__main {
+    margin-top: 200px; }
+    @media (min-width: 768px) {
+      .about__main-item {
+        margin-top: 30px; } }
     .about__main-item span {
-      font-weight: bold;
-      line-height: 30px;
-      color: #4B2DA0; } }
+      font-family: Ubuntu-Bold, sans-serif;
+      font-size: 72px; }
+      @media (min-width: 768px) {
+        .about__main-item span {
+          font-weight: bold;
+          line-height: 30px;
+          color: #4B2DA0; } }
+    .about__main-item p {
+      width: 385px;
+      height: 104px;
+      margin-top: 31px;
+      font-family: Ubuntu-Medium, sans-serif;
+      font-size: 48px; }
 
 .fixed {
   position: fixed;
@@ -3248,7 +3280,7 @@ pre {
   width: 1002px;
   height: 1181.35px;
   right: 0;
-  top: 9100px; }
+  top: 11500px; }
 
 .footer {
   margin-top: 193px; }
