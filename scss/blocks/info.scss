@@ -2,7 +2,7 @@
   padding-top: 50px;
 
   @media (min-width: 1200px) {
-    margin-top: 200px;
+    margin-top: 320px;
     padding-top: 0;
   }
 
@@ -77,9 +77,11 @@
   }
 
   &__descr-text {
+    width: 484px;
+    margin-top: 73px;
     font-family: $font-family;
     font-size: 20px;
-    line-height: 2;
+    line-height: 1.9;
     color: #232323;
   }
 }

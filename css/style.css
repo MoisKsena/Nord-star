@@ -2890,7 +2890,7 @@ pre {
   padding-top: 50px; }
   @media (min-width: 1200px) {
     .info {
-      margin-top: 200px;
+      margin-top: 320px;
       padding-top: 0; } }
   .info__inner {
     display: -webkit-box;
@@ -2937,9 +2937,11 @@ pre {
     font-size: 64px;
     color: #232323; }
   .info__descr-text {
+    width: 484px;
+    margin-top: 73px;
     font-family: Ubuntu-Regular, sans-serif;
     font-size: 20px;
-    line-height: 2;
+    line-height: 1.9;
     color: #232323; }
 
 .reasons {
@@ -2947,49 +2949,84 @@ pre {
   @media (min-width: 768px) {
     .reasons {
       margin-top: -440px; } }
+  .reasons__inner-item {
+    margin-top: 140px; }
+  .reasons__title {
+    width: 523px;
+    margin: 0;
+    padding: 0;
+    font-family: Ubuntu-Bold, sans-serif; }
+  .reasons__descr {
+    margin-top: 70px;
+    font-family: Ubuntu-Regular, sans-serif;
+    font-size: 20px; }
   .reasons__inner-list {
-    margin-top: 150px; }
+    margin-top: 200px; }
   @media (min-width: 768px) {
     .reasons__item:first-child {
       background-image: url("../img/reasons__item_1.svg");
       background-position: left 0     top 0;
       width: 917px;
-      height: 158px;
+      height: 275px;
       background-size: contain;
       background-repeat: no-repeat;
-      margin-left: 56%; } }
-  .reasons__item p {
-    padding: 50px 30px;
-    color: #ffffff; }
-  @media (min-width: 768px) {
-    .reasons__item:nth-child(2) {
-      background-image: url("../img/reasons__item_2.svg");
-      background-position: left 0     top 0;
-      width: 917px;
-      height: 158px;
-      background-size: contain;
-      background-repeat: no-repeat; } }
-  @media (min-width: 768px) {
-    .reasons__item:nth-child(3) {
-      background-image: url("../img/reasons__item_3.svg");
-      background-position: left 0     top 0;
-      width: 917px;
-      height: 158px;
-      background-size: contain;
-      background-repeat: no-repeat;
-      margin-left: 56%; } }
+      margin-left: 50%; } }
+  .reasons__item {
+    max-width: 100%; }
+    .reasons__item p {
+      padding-top: 75px;
+      padding-left: 122px;
+      color: #ffffff;
+      font-family: Ubuntu-Regular, sans-serif;
+      font-size: 36px; }
+  .reasons__item:nth-child(2) {
+    margin-top: 125px; }
+    @media (min-width: 768px) {
+      .reasons__item:nth-child(2) {
+        background-image: url("../img/reasons__item_2.svg");
+        background-position: left 0     top 0;
+        width: 917px;
+        height: 275px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+  .reasons__item:nth-child(3) {
+    margin-top: 100px; }
+    @media (min-width: 768px) {
+      .reasons__item:nth-child(3) {
+        background-image: url("../img/reasons__item_3.svg");
+        background-position: left 0     top 0;
+        width: 917px;
+        height: 275px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-left: 50%; } }
   @media (min-width: 768px) {
     .reasons__item:nth-child(4) {
       background-image: url("../img/reasons__item_4.svg");
       background-position: left 0     top 0;
       width: 917px;
-      height: 158px;
+      height: 275px;
       background-size: contain;
       background-repeat: no-repeat; } }
 
 @media (min-width: 768px) {
   .resume {
     margin-top: 200px; } }
+
+.resume__inner {
+  width: 589px;
+  height: 347px;
+  margin-top: 256px; }
+
+.resume__title {
+  width: 589px;
+  height: 158px;
+  font-family: Ubuntu-Bold, sans-serif; }
+
+.resume__descr {
+  width: 484px;
+  height: 135px;
+  line-height: 1.8; }
 
 @media (min-width: 768px) {
   .advantages {
@@ -3023,10 +3060,13 @@ pre {
     height: 450px;
     background-repeat: no-repeat; } }
 
-@media (min-width: 768px) {
-  .advantages-item__title {
-    color: #4B2DA0;
-    padding-left: 20%; } }
+.advantages-item__title {
+  margin: 0;
+  padding: 0; }
+  @media (min-width: 768px) {
+    .advantages-item__title {
+      color: #4B2DA0;
+      padding-left: 20%; } }
 
 @media (min-width: 768px) {
   .advantages-item__descr {

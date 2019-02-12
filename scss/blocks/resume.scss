@@ -1,6 +1,24 @@
 .resume {
-
+  
   @media (min-width: 768px) {
     margin-top: 200px;
+  }
+
+  &__inner {
+    width: 589px;
+    height: 347px;
+    margin-top: 256px;
+  }
+
+  &__title {
+    width: 589px;
+    height: 158px;
+    font-family: $font-family-bold;
+  }
+
+  &__descr {
+    width: 484px;
+    height: 135px;
+    line-height: 1.8;
   }
 }

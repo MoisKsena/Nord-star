@@ -58,6 +58,8 @@
     }
 
     &__title {
+      margin: 0;
+      padding: 0;
 
       @media (min-width: 768px) {
         color: #4B2DA0;
