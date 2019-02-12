@@ -3127,7 +3127,7 @@ pre {
     margin-top: 200px; }
     @media (min-width: 768px) {
       .about__main-item {
-        margin-top: 30px; } }
+        margin-bottom: 150px; } }
     .about__main-item span {
       font-family: Ubuntu-Bold, sans-serif;
       font-size: 72px; }
@@ -3136,12 +3136,15 @@ pre {
           font-weight: bold;
           line-height: 30px;
           color: #4B2DA0; } }
-    .about__main-item p {
+    .about__main-item--descr {
       width: 385px;
       height: 104px;
       margin-top: 31px;
       font-family: Ubuntu-Medium, sans-serif;
       font-size: 48px; }
+    .about__main-item--sign {
+      font-family: Ubuntu-Regular, sans-serif;
+      font-size: 20px; }
 
 .fixed {
   position: fixed;
@@ -3152,9 +3155,33 @@ pre {
   bottom: 0;
   right: 0; }
 
-@media (min-width: 768px) {
-  .tariff-item {
-    height: 500px; } }
+.tariff__descr p {
+  font-family: Ubuntu-Medium, sans-serif; }
+
+.tariff-item {
+  margin-top: 93px; }
+  @media (min-width: 768px) {
+    .tariff-item {
+      height: 500px; } }
+
+.tariff-item__title {
+  font-size: 72px; }
+
+.tariff-item__descr--main {
+  padding-left: 95px;
+  font-family: Ubuntu-Regular, sans-serif;
+  color: #ffffff; }
+
+.tariff-item__descr--number {
+  padding-left: 95px;
+  font-family: Ubuntu-Bold, sans-serif;
+  font-size: 24px;
+  color: #ffffff; }
+
+.tariff-item__title--sign {
+  font-family: Ubuntu-Bold, sans-serif;
+  font-size: 36px;
+  color: #ffffff; }
 
 @media (min-width: 768px) {
   .tariff-item:first-child {
@@ -3280,7 +3307,7 @@ pre {
   width: 1002px;
   height: 1181.35px;
   right: 0;
-  top: 11500px; }
+  top: 12248px; }
 
 .footer {
   margin-top: 193px; }
