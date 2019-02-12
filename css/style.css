@@ -2521,18 +2521,22 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   font-weight: 500;
   font-style: normal; }
 
+/*
 @font-face {
-  font-family: 'Ubuntu-bold';
-  src: url("../fonts/subset-Ubuntu-Bold.woff2") format("woff2"), url("../fonts/subset-Ubuntu-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal; }
+    font-family: 'Ubuntu-bold';
+    src: url('../fonts/Ubuntu-Bold.woff2') format('woff2'),
+        url('../fonts/Ubuntu-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
 
 @font-face {
-  font-family: 'Ubuntu-regular';
-  src: url("../fonts/subset-Ubuntu-Regular.woff2") format("woff2"), url("../fonts/subset-Ubuntu-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
+    font-family: 'Ubuntu-regular';
+    src: url('../fonts/Ubuntu-Regular.woff2') format('woff2'),
+        url('../fonts/Ubuntu-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}*/
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -2547,7 +2551,7 @@ body {
   background-color: #fff;
   margin: 0;
   min-height: 100%;
-  font-family: Ubuntu-regular, sans-serif;
+  font-family: Ubuntu-Regular, sans-serif;
   font-size: 20px;
   line-height: 1.4;
   color: #232323;
@@ -2617,9 +2621,8 @@ a {
   background-color: transparent;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
-  font-family: Ubuntu-regular, sans-serif;
+  font-family: Ubuntu-Regular, sans-serif;
   font-style: normal;
-  font-weight: 500;
   line-height: normal;
   font-size: 18px;
   color: #232323; }
@@ -2773,7 +2776,7 @@ pre {
       background-position: right 0 top; } }
 
 .page-header {
-  padding-top: 55px; }
+  padding-top: 124px; }
   @media (min-width: 768px) {
     .page-header__wrap {
       -webkit-box-pack: justify;
@@ -2822,19 +2825,22 @@ pre {
     font-weight: bold;
     font-size: 28px;
     margin-bottom: 70px;
-    margin-top: 180px; }
+    margin-top: 359px; }
     @media (min-width: 992px) {
       .promo__header {
         font-size: 72px; } }
   .promo__descr {
-    font-size: 14px;
+    font-family: Ubuntu-Medium, sans-serif;
+    font-size: 24px;
     color: rgba(35, 35, 35, 0.5);
     margin-bottom: 80px; }
     @media (min-width: 768px) {
       .promo__descr span {
         font-weight: bold; } }
   .promo__btn-form {
+    font-family: Ubuntu-Bold, sans-serif;
     font-size: 24px;
+    font-weight: 700;
     color: #FFFFFF;
     background: #6A48DC;
     -webkit-box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
@@ -2846,8 +2852,7 @@ pre {
     display: inline-block;
     text-align: center;
     -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-    font-weight: bold; }
+    transition: all 0.3s; }
     .promo__btn-form:hover {
       text-decoration: none;
       background: #4B2DA0;
@@ -2928,12 +2933,13 @@ pre {
         padding-bottom: 0;
         margin-bottom: 250px; } }
   .info__title {
-    width: 90%;
-    font-weight: bold;
-    font-size: 28px;
+    font-family: Ubuntu-Bold, sans-serif;
+    font-size: 64px;
     color: #232323; }
   .info__descr-text {
-    font-size: 14px;
+    font-family: Ubuntu-Regular, sans-serif;
+    font-size: 20px;
+    line-height: 2;
     color: #232323; }
 
 .reasons {

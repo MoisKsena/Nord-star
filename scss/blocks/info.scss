@@ -71,14 +71,15 @@
   }
 
   &__title {
-    width: 90%;
-    font-weight: bold;
-    font-size: 28px;
+    font-family: $font-family-bold; 
+    font-size: 64px;
     color: #232323;
   }
 
   &__descr-text {
-    font-size: 14px;
+    font-family: $font-family;
+    font-size: 20px;
+    line-height: 2;
     color: #232323;
   }
 }
