@@ -1,0 +1,73 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: $grid-indent / 2;
+    padding-left: $grid-indent / 2;
+
+    @each $breakpoint, $breakpoint_value in $grid-breakpoints {
+        @if $breakpoint != xs {
+            @media (min-width: $breakpoint_value) {
+                width: map-get($container-max-widths, $breakpoint);
+            }
+        }
+    }
+}
+
+.container-fluid {
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: $grid-indent / 2;
+    padding-left: $grid-indent / 2;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: $grid-indent / -2;
+    margin-right: $grid-indent / -2;
+}
+
+
+@mixin make-grid-columns($columns: $grid-columns, $gutter: $grid-indent, $breakpoints: $grid-breakpoints) {
+    %grid-column {
+        position: relative;
+        float:left;
+        min-height: 1px;
+        padding-right: ($gutter / 2);
+        padding-left: ($gutter / 2);
+    }
+
+    @each $breakpoint, $breakpoint_value in $breakpoints {
+
+        @for $i from 1 through $columns {
+            .col-#{$breakpoint}-#{$i} {
+                    @extend %grid-column;
+            }
+
+            @if $breakpoint == xs {
+               .col-#{$breakpoint}-#{$i} {
+                    flex: 0 0 ($i * 100% / $columns);
+                    max-width: ($i * 100% / $columns);
+                    width: ($i * 100% / $columns);
+                }
+            }
+            @else {
+                @media (min-width: $breakpoint_value) {
+                    .col-#{$breakpoint}-#{$i} {
+                        flex: 0 0 ($i * 100% / $columns);
+                        max-width: ($i * 100% / $columns);
+                        width: ($i * 100% / $columns);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include make-grid-columns;
+
+@supports not (display: flex) {
+    .container, .container-fluid, .row {
+        @include clearfix;
+    }
+}
