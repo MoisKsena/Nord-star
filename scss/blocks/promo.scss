@@ -1,6 +1,20 @@
 .promo {
   padding-top: 359px;
 
+  @media (max-width:1335px) {
+    margin: 0 auto;
+    padding-left: 44px;
+    padding-right: 44px; 
+    padding-top: 387px;  
+  }
+
+  @media (max-width:361px) {
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 200px;
+  }
+
   &__inner-header {
     @extend .col-sm-12;
   }
@@ -10,20 +24,64 @@
     max-width: 728px;
     font-family: $font-family-bold;
     font-size: $font-size-h1;
+
+    @media (max-width:1335px) {
+      font-family: $font-family;
+      font-size: 64px;
+    }
+
+    @media (max-width:361px) {
+      font-family: $font-family;
+      font-size: 30px;
+    }
   }
 
   &__inner-descr {
+    @extend .row;
   }
 
   &__descr {
     opacity: 0.52;
     font-family: $font-family;
     font-size: $font-size-xs;
+
+    @media (max-width:1335px) {
+      display: none;
+    }
+
+    @media (max-width:361px) {
+      display: none;
+    }
+  }
+
+  &__descr-mobil {
+    display: none;
+
+    @media (max-width:1335px) {
+      display: flex;
+      width: 25%;
+      opacity: 0.52;
+    }
+
+    @media (max-width:361px) {
+      display: flex;
+      width: 100%;
+      opacity: 0.52;
+      font-size: 18px;
+    }
   }
 
   &__btn {
     @extend .col-sm-12;
     margin-top: 80px;
+
+    @media (max-width:361px) {
+      display: none;
+    }
+
+    @media (max-width:1335px) {
+      display: none;
+    }
   }
 
   &__btn-form {
@@ -32,9 +90,21 @@
     background-color: $white;
     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
     border-radius: 40px;
+  }
 
-    &--mob {
-      display: none;
+  &__mobilbtn {
+    display: none;
+
+    @media (max-width:361px) {
+      display: flex;
     }
+
+    @media (max-width:1335px) {
+      display: flex;
+      width: 100%;
+    }
+  }
+
+  &__mobilbtn-text {
   }
 }
