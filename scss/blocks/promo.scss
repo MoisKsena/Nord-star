@@ -1,16 +1,13 @@
 .promo {
   padding-top: 359px;
 
-  &__inner {
-    
-  }
-
   &__inner-header {
     @extend .col-sm-12;
   }
 
   &__header {
     @extend .col-sm-8;
+    max-width: 728px;
     font-family: $font-family-bold;
     font-size: $font-size-h1;
   }

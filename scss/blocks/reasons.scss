@@ -1,0 +1,48 @@
+.reasons {
+  position: relative;
+  background-image: url(../img/BACKGR_reasons.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  &__text {
+    @extend .row;
+    @extend .col-sm-6;
+    
+    position: absolute;
+    top: -450px;
+
+  }
+
+  &__text-title {
+    font-family: $font-family-bold;
+    font-size: $font-size-h1-mobile;
+  }
+
+  &__text-descr {
+    padding-top: 75px;
+    padding-bottom: 114px;
+    font-family: $font-family;
+    font-size: 20px;
+    
+  }
+
+  &__inner-list {
+    padding-top: 86px;
+  }
+
+  &__item:not(:first-child) {
+    padding-top: 170px;
+  }
+
+  &__item:nth-child(odd)  {
+    @extend .row;
+    justify-content: flex-end;
+  }
+
+  &__item:nth-child(even)  {
+  
+  }
+
+  &__item-text {
+  }
+}

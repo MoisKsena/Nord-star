@@ -1,7 +1,5 @@
-.tariff__table {
-  @extend .row;
-}
-
-.tariff__item {
-  @extend .col-sm-4;
+.image__header {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
