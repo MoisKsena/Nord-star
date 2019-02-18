@@ -1,50 +1,29 @@
-.page-header {
-  padding-top: 124px;
-
-  &__wrap {
-
-    @media (min-width: $screen-sm) {//768
-      justify-content: space-between;
-    }
-  }
-
+.header {
+  @extend .row;
   &__tel a {
-    color: $white;
     text-decoration: none;
-
-    @media (min-width: $screen-sm) {
-      color: $black;
-    }
+    color: $black;
   }
 
   &__nav {
-    display: none;
 
-    @media (min-width: $screen-sm) {
-      display: block;
-      width: 250px;
+  }
 
-      &-list {
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
-      }
+  &__nav-list {
+  }
 
-      &-link {
-        text-decoration: none;
-        text-transform: uppercase;
-        color: $white;
-      }
-    }
+  &__nav-item {
+  }
+
+  &__nav-link {
   }
 
   &__btn-form {
-    display: none;
-
-    @media (min-width: $screen-sm) {
-      display: none;
-    }
   }
 }
+
+
+
+
 
 

@@ -1,0 +1,145 @@
+/* ПРИМЕСИ */
+@mixin box-sizing {
+    box-sizing: border-box;
+}
+
+@mixin hidden_list($breakpoints: $grid-breakpoints) {
+
+    @each $breakpoint, $breakpoint_value in $breakpoints {
+        @if $breakpoint == xs {
+            .hidden-#{$breakpoint} {
+                @media (max-width: map-get($grid-breakpoints-max, $breakpoint)) {
+                    display: none !important;
+                }
+            }
+        }
+        @else if $breakpoint == xl {
+            .hidden-#{$breakpoint} {
+                @media (min-width: $breakpoint_value) {
+                    display: none !important;
+                }
+            }
+        }
+        @else {
+            .hidden-#{$breakpoint} {
+                @media (min-width: $breakpoint_value) and (max-width: map-get($grid-breakpoints-max, $breakpoint)){
+                    display: none !important;
+                }
+            }
+        }
+    }
+}
+
+@include hidden_list;
+
+@mixin burger_list($breakpoints: $grid-breakpoints) {
+    @each $breakpoint, $breakpoint_value in $breakpoints {
+       @if $breakpoint == xl {
+            .burger-#{$breakpoint} {
+                @media (min-width: $breakpoint_value) {
+                    display: none;
+                }
+            }
+        }
+        @else {
+            .burger-#{$breakpoint} {
+                @media (max-width: map-get($grid-breakpoints-max, $breakpoint)){
+                    display: none;
+                }
+            }
+        }
+    }
+    .burger-all {
+        dipslay: none;
+    }
+}
+
+@mixin in_burger_list($breakpoints: $grid-breakpoints) {
+    %in-burger-breakpoint {
+        display:none;
+    }
+    @each $breakpoint, $breakpoint_value in $breakpoints {
+        .in-burger-#{$breakpoint} {
+            @extend %in-burger-breakpoint;
+        }
+
+       @if $breakpoint == xl {
+            .in-burger-#{$breakpoint} {
+                @media (max-width: $breakpoint_value) {
+                    display: block;
+                    display: flex;
+                }
+            }
+        }
+        @else {
+            .in-burger-#{$breakpoint} {
+                @media (max-width: map-get($grid-breakpoints-max, $breakpoint)){
+                    display: block;
+                    display: flex;
+                }
+            }
+        }
+    }
+    .in-burger-all {
+        display: block;
+        display: flex;
+    }
+}
+
+
+@mixin transition-hover {
+    transition: .25s ease-out;
+}
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
+
+.invisible {
+    visibility: hidden;
+}
+.text-hide {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+@mixin clearfix {
+    &:before, &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+.vertical_align_inner {
+    display: inline-block;
+    width: 100%;
+}
+
+@mixin list-normalize {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+@mixin list-li-normalize {
+    li {
+        margin: 0px;
+        padding: 0px;
+        background: none;
+
+        &:before {
+            content: none;
+            visibility: hidden;
+        }
+    }
+}

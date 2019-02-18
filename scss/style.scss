@@ -1,18 +1,9 @@
 @import 'AOS/aos';
-@import 'variables';
 @import 'fonts.scss';
+@import 'variables';
+@import 'mixins.scss';
 @import 'grid.scss';
 @import 'global';
 
 @import 'blocks/page';
 @import 'blocks/header';
-@import 'blocks/promo';
-@import 'blocks/info';
-@import 'blocks/reasons';
-@import 'blocks/resume';
-@import 'blocks/advantages';
-@import 'blocks/about';
-@import 'blocks/tariff';
-@import 'blocks/feedback';
-@import 'blocks/orderform';
-@import 'blocks/footer';

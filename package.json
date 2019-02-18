@@ -1,12 +1,12 @@
 {
-  "name": "EpicSkills-start-kit",
+  "name": "EpicSkills",
   "version": "1.0.0",
-  "description": "Start project.",
+  "description": "Nord-star",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp"
   },
-  "author": "Nikolay Gromov",
+  "author": "MK",
   "license": "MIT",
   "repository": {
     "type": "git",
