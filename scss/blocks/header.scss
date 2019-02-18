@@ -1,25 +1,42 @@
 .header {
-  @extend .row;
+  padding-top: 125px;
+
   &__tel a {
+    @extend .col-sm-6;
     text-decoration: none;
+    font-family: $font-family;
+    font-size: 18px;
     color: $black;
   }
 
   &__nav {
-
+    @extend .col-sm-6;
+    
   }
 
   &__nav-list {
+    @extend .row;
+    justify-content: flex-end;
+    list-style-type: none;
   }
 
   &__nav-item {
   }
 
   &__nav-link {
+    padding-left: 74px;
+    text-decoration: none;
+    font-family: $font-family;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: $black;
   }
 
   &__btn-form {
+    @extend .col-sm-12;
+    
   }
+
 }
 
 

@@ -1,0 +1,43 @@
+.promo {
+  padding-top: 359px;
+
+  &__inner {
+    
+  }
+
+  &__inner-header {
+    @extend .col-sm-12;
+  }
+
+  &__header {
+    @extend .col-sm-8;
+    font-family: $font-family-bold;
+    font-size: $font-size-h1;
+  }
+
+  &__inner-descr {
+  }
+
+  &__descr {
+    opacity: 0.52;
+    font-family: $font-family;
+    font-size: $font-size-xs;
+  }
+
+  &__btn {
+    @extend .col-sm-12;
+    margin-top: 80px;
+  }
+
+  &__btn-form {
+    padding: 48px 175px 49px 193px;
+    text-decoration: none;
+    background-color: $white;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+
+    &--mob {
+      display: none;
+    }
+  }
+}
