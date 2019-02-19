@@ -1,0 +1,26 @@
+.tariff {
+  background-image: url(../img/BACKGR_tariff.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  &__main {
+  }
+  &__main-title {
+  }
+  &__main-descr {
+  }
+  &__table {
+  }
+  &__item {
+  }
+  &__item-title {
+  }
+  &__item-descr {
+    &--text {
+    }
+    &--sign {
+    }
+  }
+  &__item-addition {
+  }
+}

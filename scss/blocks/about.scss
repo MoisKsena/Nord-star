@@ -1,0 +1,42 @@
+.about {
+  background-image: url(../img/BACKGR_about.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 3800px;
+
+  &__main-text {
+    display: none;
+    &--title {
+    }
+    &--explan {
+    }
+  }
+  &__main {
+    @extend .col-sm-6;
+    padding-top: 890px;
+  }
+  &__main-item {
+    span {
+      font-family: $font-family;
+      font-weight: 700;
+      font-size: 72px;
+      color: $violet;
+    }
+    padding-left: 480px;
+    padding-bottom: 115px;
+    
+    &--descr {
+      font-family: $font-family;
+      font-weight: 500;
+      font-size: 48px;
+    }
+    &--sign {
+      font-family: $font-family;
+      font-size: 20px;
+    }
+  }
+  &__main-image {
+    &--position {
+    }
+  }
+}

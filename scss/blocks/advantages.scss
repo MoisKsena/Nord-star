@@ -1,0 +1,41 @@
+.advantages {
+  background-image: url(../img/BACKGR_advantages.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  //margin-top: -500px;
+
+  &__title {
+    @extend .row;
+    width: 60%;
+    padding-top: 826px;
+  }
+
+  &__inner {
+    @extend .row;
+    padding-top: 100px;
+  }
+
+  &__item {
+    @extend .col-sm-4;
+    
+  }
+
+  &__item-img {
+    display: flex;
+    height: 500px;
+    margin: 0 auto;
+  }
+
+  &__item-title {
+    padding-top: 16px;
+    font-family: $font-family-bold;
+    font-size: 36px;
+    color: $violet;
+  }
+
+  &__item-descr {
+    padding-top: 61px;
+    font-family: $font-family;
+    font-size: 20px;
+  }
+}

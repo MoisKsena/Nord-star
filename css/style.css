@@ -985,7 +985,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   padding-right: 0px;
   padding-left: 0px; }
 
-.row, .header__nav-list, .promo__inner-descr, .reasons__text {
+.row, .header__nav-list, .promo__inner-descr, .reasons__text, .resume__inner, .advantages__title, .advantages__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -994,7 +994,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   margin-left: 0px;
   margin-right: 0px; }
 
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .info__text, .col-sm-5, .col-sm-6, .header__tel, .header__nav, .info__image, .reasons__text, .col-sm-7, .col-sm-8, .promo__header, .col-sm-9, .col-sm-10, .info__descr, .col-sm-11, .col-sm-12, .header__btn-form, .promo__inner-header, .promo__btn, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lgx-1, .col-lgx-2, .col-lgx-3, .col-lgx-4, .col-lgx-5, .col-lgx-6, .col-lgx-7, .col-lgx-8, .col-lgx-9, .col-lgx-10, .col-lgx-11, .col-lgx-12, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .info__text, .advantages__item, .col-sm-5, .col-sm-6, .header__tel, .header__nav, .info__image, .reasons__text, .resume__title, .resume__descr, .about__main, .col-sm-7, .col-sm-8, .promo__header, .col-sm-9, .col-sm-10, .info__descr, .col-sm-11, .col-sm-12, .header__btn-form, .promo__inner-header, .promo__btn, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lgx-1, .col-lgx-2, .col-lgx-3, .col-lgx-4, .col-lgx-5, .col-lgx-6, .col-lgx-7, .col-lgx-8, .col-lgx-9, .col-lgx-10, .col-lgx-11, .col-lgx-12, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
   position: relative;
   float: left;
   min-height: 1px;
@@ -1110,7 +1110,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     width: 25%; } }
 
 @media (min-width: 768px) {
-  .col-sm-4, .info__text {
+  .col-sm-4, .info__text, .advantages__item {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 33.33333%;
             flex: 0 0 33.33333%;
@@ -1126,7 +1126,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     width: 41.66667%; } }
 
 @media (min-width: 768px) {
-  .col-sm-6, .header__tel, .header__nav, .info__image, .reasons__text {
+  .col-sm-6, .header__tel, .header__nav, .info__image, .reasons__text, .resume__title, .resume__descr, .about__main {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
@@ -1566,10 +1566,10 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     width: 100%; } }
 
 @supports not (display: flex) {
-  .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .header__nav-list:before, .promo__inner-descr:before, .reasons__text:before, .row:after, .header__nav-list:after, .promo__inner-descr:after, .reasons__text:after {
+  .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .header__nav-list:before, .promo__inner-descr:before, .reasons__text:before, .resume__inner:before, .advantages__title:before, .advantages__inner:before, .row:after, .header__nav-list:after, .promo__inner-descr:after, .reasons__text:after, .resume__inner:after, .advantages__title:after, .advantages__inner:after {
     content: " ";
     display: table; }
-  .container:after, .container-fluid:after, .row:after, .header__nav-list:after, .promo__inner-descr:after, .reasons__text:after {
+  .container:after, .container-fluid:after, .row:after, .header__nav-list:after, .promo__inner-descr:after, .reasons__text:after, .resume__inner:after, .advantages__title:after, .advantages__inner:after {
     clear: both; } }
 
 html {
@@ -1990,8 +1990,72 @@ pre {
     padding-bottom: 74px;
     margin: 0 auto; }
 
-.resume {
-  background-image: url(../img/BACKGR_resume.svg);
+.resume__title {
+  margin-left: 50%;
+  font-family: Ubuntu-Bold, sans-serif;
+  font-size: 64px;
+  padding-bottom: 54px; }
+
+.resume__descr {
+  margin-left: 50%;
+  font-family: Ubuntu-Regular, sans-serif;
+  font-size: 20px; }
+
+.resume__mobil {
+  display: none; }
+
+.advantages {
+  background-image: url(../img/BACKGR_advantages.svg);
+  background-size: 100%;
+  background-repeat: no-repeat; }
+  .advantages__title {
+    width: 60%;
+    padding-top: 826px; }
+  .advantages__inner {
+    padding-top: 100px; }
+  .advantages__item-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 500px;
+    margin: 0 auto; }
+  .advantages__item-title {
+    padding-top: 16px;
+    font-family: Ubuntu-Bold, sans-serif;
+    font-size: 36px;
+    color: #4B2DA0; }
+  .advantages__item-descr {
+    padding-top: 61px;
+    font-family: Ubuntu-Regular, sans-serif;
+    font-size: 20px; }
+
+.about {
+  background-image: url(../img/BACKGR_about.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 3800px; }
+  .about__main-text {
+    display: none; }
+  .about__main {
+    padding-top: 890px; }
+  .about__main-item {
+    padding-left: 480px;
+    padding-bottom: 115px; }
+    .about__main-item span {
+      font-family: Ubuntu-Regular, sans-serif;
+      font-weight: 700;
+      font-size: 72px;
+      color: #4B2DA0; }
+    .about__main-item--descr {
+      font-family: Ubuntu-Regular, sans-serif;
+      font-weight: 500;
+      font-size: 48px; }
+    .about__main-item--sign {
+      font-family: Ubuntu-Regular, sans-serif;
+      font-size: 20px; }
+
+.tariff {
+  background-image: url(../img/BACKGR_tariff.svg);
   background-size: 100%;
   background-repeat: no-repeat; }
 

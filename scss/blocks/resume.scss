@@ -1,16 +1,25 @@
 .resume {
-  
-  background-image: url(../img/BACKGR_resume.svg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-
   &__inner {
-   
+    @extend .row;
   }
-
   &__title {
+    @extend .col-sm-6;
+    margin-left: 50%;
+    font-family: $font-family-bold;
+    font-size: $font-size-h1-mobile;
+    padding-bottom: 54px;
   }
-
   &__descr {
+    @extend .col-sm-6;
+    margin-left: 50%;
+    font-family: $font-family;
+    font-size: 20px;
+  }
+  &__mobil {
+    display: none;
+  }
+  &__mobil-title {
+  }
+  &__mobil-descr {
   }
 }
