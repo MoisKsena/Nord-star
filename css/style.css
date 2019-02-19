@@ -1812,7 +1812,7 @@ pre {
       margin-left: 44px; } }
   @media (max-width: 361px) {
     .header {
-      padding-top: 103px; } }
+      padding-top: 50px; } }
   .header__tel a {
     text-decoration: none; }
   .header__tel {
@@ -1931,8 +1931,16 @@ pre {
   background-repeat: no-repeat; }
   .reasons__text {
     position: absolute;
-    top: -450px; }
+    top: -450px;
+    left: 44%; }
+    @media (max-width: 1335px) {
+      .reasons__text {
+        left: 43%; } }
+    @media (max-width: 361px) {
+      .reasons__text {
+        left: 0; } }
   .reasons__text-title {
+    width: 100%;
     font-family: Ubuntu-Bold, sans-serif;
     font-size: 64px; }
   .reasons__text-descr {

@@ -10,10 +10,19 @@
     
     position: absolute;
     top: -450px;
+    left: 44%;
 
+    @media (max-width:1335px) {
+      left: 43%;
+    }
+
+    @media (max-width:361px) {
+      left: 0;
+    }
   }
 
   &__text-title {
+    width: 100%;
     font-family: $font-family-bold;
     font-size: $font-size-h1-mobile;
   }
