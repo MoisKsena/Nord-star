@@ -1,7 +1,5 @@
 .about {
-  background-image: url(../img/BACKGR_about.svg);
-  background-size: 100%;
-  background-repeat: no-repeat;
+  
   height: 3800px;
 
   &__main-text {
@@ -13,7 +11,7 @@
   }
   &__main {
     @extend .col-sm-6;
-    padding-top: 750px;
+    padding-top: 650px;
   }
   &__main-item {
     span {
@@ -22,7 +20,7 @@
       font-size: 72px;
       color: $violet;
     }
-    padding-left: 480px;
+    padding-left: 200px;
     padding-bottom: 115px;
     
     &--descr {
@@ -36,6 +34,7 @@
     }
   }
   &__main-image {
+    @extend .col-sm-6;
     &--position {
     }
   }

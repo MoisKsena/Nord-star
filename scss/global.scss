@@ -18,6 +18,8 @@ body {
   line-height: $line-height;
   color: $text-color;
   word-break: break-word;
+  background-image: url(../img/BACKGR.svg);
+  background-size: 100%;
 }
 
 [tabindex='-1']:focus {

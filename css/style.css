@@ -994,7 +994,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   margin-left: 0px;
   margin-right: 0px; }
 
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .info__text, .advantages__item, .col-sm-5, .col-sm-6, .header__tel, .header__nav, .info__image, .reasons__text, .resume__title, .resume__descr, .about__main, .col-sm-7, .col-sm-8, .promo__header, .col-sm-9, .col-sm-10, .info__descr, .col-sm-11, .col-sm-12, .header__btn-form, .promo__inner-header, .promo__btn, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lgx-1, .col-lgx-2, .col-lgx-3, .col-lgx-4, .col-lgx-5, .col-lgx-6, .col-lgx-7, .col-lgx-8, .col-lgx-9, .col-lgx-10, .col-lgx-11, .col-lgx-12, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .info__text, .advantages__item, .tariff__item, .col-sm-5, .col-sm-6, .header__tel, .header__nav, .info__image, .reasons__text, .resume__title, .resume__descr, .about__main, .about__main-image, .col-sm-7, .col-sm-8, .promo__header, .col-sm-9, .col-sm-10, .info__descr, .col-sm-11, .col-sm-12, .header__btn-form, .promo__inner-header, .promo__btn, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lgx-1, .col-lgx-2, .col-lgx-3, .col-lgx-4, .col-lgx-5, .col-lgx-6, .col-lgx-7, .col-lgx-8, .col-lgx-9, .col-lgx-10, .col-lgx-11, .col-lgx-12, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
   position: relative;
   float: left;
   min-height: 1px;
@@ -1110,7 +1110,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     width: 25%; } }
 
 @media (min-width: 768px) {
-  .col-sm-4, .info__text, .advantages__item {
+  .col-sm-4, .info__text, .advantages__item, .tariff__item {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 33.33333%;
             flex: 0 0 33.33333%;
@@ -1126,7 +1126,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     width: 41.66667%; } }
 
 @media (min-width: 768px) {
-  .col-sm-6, .header__tel, .header__nav, .info__image, .reasons__text, .resume__title, .resume__descr, .about__main {
+  .col-sm-6, .header__tel, .header__nav, .info__image, .reasons__text, .resume__title, .resume__descr, .about__main, .about__main-image {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
@@ -1590,7 +1590,9 @@ body {
   font-size: 20px;
   line-height: 1.4;
   color: #232323;
-  word-break: break-word; }
+  word-break: break-word;
+  background-image: url(../img/BACKGR.svg);
+  background-size: 100%; }
 
 [tabindex='-1']:focus {
   outline: none !important; }
@@ -1925,10 +1927,7 @@ pre {
   padding-bottom: 62px; }
 
 .reasons {
-  position: relative;
-  background-image: url(../img/BACKGR_reasons.svg);
-  background-size: 100%;
-  background-repeat: no-repeat; }
+  position: relative; }
   .reasons__text {
     position: absolute;
     top: -450px;
@@ -2004,42 +2003,39 @@ pre {
 .resume__mobil {
   display: none; }
 
-.advantages {
-  background-image: url(../img/BACKGR_advantages.svg);
-  background-size: 100%;
-  background-repeat: no-repeat; }
-  .advantages__title {
-    width: 60%;
-    padding-top: 826px; }
-  .advantages__inner {
-    padding-top: 100px; }
-  .advantages__item-img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 500px;
-    margin: 0 auto; }
-  .advantages__item-title {
-    padding-top: 16px;
-    font-family: Ubuntu-Bold, sans-serif;
-    font-size: 36px;
-    color: #4B2DA0; }
-  .advantages__item-descr {
-    padding-top: 61px;
-    font-family: Ubuntu-Regular, sans-serif;
-    font-size: 20px; }
+.advantages__title {
+  width: 60%;
+  padding-top: 326px; }
+
+.advantages__inner {
+  padding-top: 100px; }
+
+.advantages__item-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 500px;
+  margin: 0 auto; }
+
+.advantages__item-title {
+  padding-top: 16px;
+  font-family: Ubuntu-Bold, sans-serif;
+  font-size: 36px;
+  color: #4B2DA0; }
+
+.advantages__item-descr {
+  padding-top: 61px;
+  font-family: Ubuntu-Regular, sans-serif;
+  font-size: 20px; }
 
 .about {
-  background-image: url(../img/BACKGR_about.svg);
-  background-size: 100%;
-  background-repeat: no-repeat;
   height: 3800px; }
   .about__main-text {
     display: none; }
   .about__main {
-    padding-top: 750px; }
+    padding-top: 650px; }
   .about__main-item {
-    padding-left: 480px;
+    padding-left: 200px;
     padding-bottom: 115px; }
     .about__main-item span {
       font-family: Ubuntu-Regular, sans-serif;
@@ -2054,9 +2050,34 @@ pre {
       font-family: Ubuntu-Regular, sans-serif;
       font-size: 20px; }
 
-.tariff {
-  background-image: url(../img/BACKGR_tariff.svg);
-  background-size: 100%;
-  background-repeat: no-repeat; }
+.feedback {
+  padding-top: 500px; }
+  .feedback__wrap {
+    position: relative;
+    padding-top: 252px; }
+  .feedback__title {
+    width: 501px;
+    height: 140px;
+    margin-bottom: 226px; }
+  .feedback__img {
+    position: absolute;
+    right: 0;
+    top: 77.49%;
+    bottom: 16.98%;
+    background-image: url("../img/feedback.png");
+    background-repeat: no-repeat;
+    width: 705px;
+    height: 812px; }
+  .feedback__reviews {
+    margin-right: 242px; }
+  .feedback__item:nth-child(2) {
+    display: none; }
+  .feedback__item:nth-child(3) {
+    display: none; }
+  .feedback__item-descr {
+    font-weight: bold; }
+  .feedback__item-text {
+    width: 485px;
+    height: 316px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,8 +1,6 @@
 .reasons {  
   position: relative;
-  background-image: url(../img/BACKGR_reasons.svg);
-  background-size: 100%;
-  background-repeat: no-repeat;
+  
 
   &__text {
     @extend .row;

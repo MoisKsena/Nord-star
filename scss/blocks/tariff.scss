@@ -1,17 +1,21 @@
 .tariff {
-  background-image: url(../img/BACKGR_tariff.svg);
-  background-size: 100%;
-  background-repeat: no-repeat;
+  //margin-top: 750px;
+  
 
   &__main {
+   
   }
   &__main-title {
+    
   }
   &__main-descr {
+    
   }
   &__table {
+    
   }
   &__item {
+    @extend .col-sm-4;
   }
   &__item-title {
   }

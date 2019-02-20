@@ -1,13 +1,9 @@
 .advantages {
-  background-image: url(../img/BACKGR_advantages.svg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  //margin-top: -500px;
-
+  
   &__title {
     @extend .row;
     width: 60%;
-    padding-top: 826px;
+    padding-top: 326px;
   }
 
   &__inner {
