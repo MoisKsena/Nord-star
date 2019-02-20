@@ -19,9 +19,14 @@ body {
   color: $text-color;
   word-break: break-word;
   background-image: url('../img/hederImg.svg'), url('../img/BACKGR.svg');
-  background-size: auto, 100%;
+  background-size: 78%, 100%;
   background-position: 100% 0, 0 0;
   background-repeat: no-repeat, repeat;
+
+  @media (max-width:361px) {
+    background-size: 219%, 100%;
+    background-position: 55% 0, 0 0;
+  } 
 }
 
 [tabindex='-1']:focus {

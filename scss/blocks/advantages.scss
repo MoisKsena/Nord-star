@@ -13,7 +13,33 @@
 
   &__item {
     @extend .col-sm-4;
+  
     
+  }
+  &__item-imgfirst {
+    height: 530px;
+    background-image: url('../img/advantages1.svg');
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: 0 -20px;
+  }
+
+  &__item-imgsecond {
+    display: flex;
+    justify-content: flex-end;
+    height: 530px;
+    background-image: url('../img/advantages2.svg');
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: 65px 30px;
+  }
+
+  &__item-imgthird {
+    height: 530px;
+    background-image: url('../img/advantages3.svg');
+    background-size: 74%;
+    background-repeat: no-repeat;
+    background-position: -30px -10px;
   }
 
   &__item-img {
@@ -32,7 +58,7 @@
   }
 
   &__item-title {
-    margin-top: 15px;
+    margin-top: -10px;
     margin-left: 130px;
     font-family: $font-family-bold;
     font-size: 36px;

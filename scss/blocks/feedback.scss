@@ -44,8 +44,11 @@
     line-height: 1.7;
   }
 
-  &__img {
-    padding-left: 100px;
-    padding-top: 50px;
+  &__image {
+    height: 1000px;
+    background-image: url('../img/feedback.svg');
+    background-repeat: no-repeat;
+    background-size: 42%;
+    background-position: 88% 45%;
   }
 }

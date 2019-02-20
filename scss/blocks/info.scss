@@ -1,26 +1,29 @@
 .info {
-  margin-top: 500px;
+  height: 2000px;
+  margin-top: 510px;
   margin-bottom: 62px;
-
-  &__image {
-    @extend .col-sm-6;
-    &--position {
-    }
-  }
+  background-image: url('../img/info.svg');
+  background-repeat: no-repeat;
+  background-size: 49%;
+  background-position: 40px 0;
 
   &__text {
-    @extend .col-sm-6;
+    @extend .row;
+    margin-left: 50%;
     padding-left: 130px;
-    padding-top: 350px;
-    max-width: 550px;
-  }
-
-  &__title {
+    padding-top: 290px;
     
   }
 
+  &__title {
+    max-width: 500px;;
+  }
+
   &__descr {
-    @extend .col-sm-10;
-    padding-top: 25px;  
+    max-width: 460px;
+    padding-top: 25px; 
+    font-family: $font-family;
+    font-size: $font-size; 
+    line-height: 1.9;
   }
 }

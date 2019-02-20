@@ -26,9 +26,10 @@
     font-size: $font-size-h1;
 
     @media (max-width:1335px) {
+      min-width: 768px;
       padding-left: 0;
       font-family: $font-family;
-      font-size: 64px;
+      font-size: $font-size-h1-mobile;
     }
 
     @media (max-width:361px) {
@@ -95,6 +96,7 @@
     background-color: $white;
     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
     border-radius: 40px;
+    border: none;
     font-family: $font-family-bold;
     font-weight: 700;
     font-size: 24px;
