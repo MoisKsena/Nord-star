@@ -1,9 +1,9 @@
 .feedback {
-  position: relative;
+  @extend .row;
   margin-top: 150px;
 
   &__reviews {
-    @extend .col-sm-4;
+    @extend .col-sm-6;
   }
 
   &__reviews-title {
@@ -37,6 +37,7 @@
   }
 
   &__item-text {
+    max-width: 480px;
     padding-top: 42px;
     font-family: $font-family;
     font-size: 20px;
@@ -44,10 +45,7 @@
   }
 
   &__img {
-    @extend .col-sm-4;
-
-    &--position {
-      @extend .col-sm-4;
-    }
+    padding-left: 100px;
+    padding-top: 50px;
   }
 }
