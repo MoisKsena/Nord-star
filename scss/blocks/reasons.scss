@@ -1,14 +1,8 @@
 .reasons {  
-  position: relative;
-  
-
   &__text {
     @extend .row;
-    @extend .col-sm-6;
-    
-    position: absolute;
-    top: -450px;
-    left: 44%;
+    margin-top: -430px;
+    padding-left: 52%;
 
     @media (max-width:1335px) {
       left: 43%;
@@ -26,7 +20,7 @@
   }
 
   &__text-descr {
-    padding-top: 75px;
+    padding-top: 40px;
     padding-bottom: 114px;
     font-family: $font-family;
     font-size: 20px;
@@ -39,40 +33,44 @@
   }
 
 
-  &__item {     
-    padding-bottom: 170px;
+  &__item {    
+
+    
   }
 
   &__item:nth-child(1)  {
-    margin-left: 40%;
+    margin-left: 45%;
     background-image: url(../img/reasons__item_1.svg);
     background-size: 100%;
     background-repeat: no-repeat;
+    padding-bottom: 180px;
   }
 
   &__item:nth-child(2)  {
-    margin-right: 40%;
+    margin-right: 45%;
     background-image: url(../img/reasons__item_2.svg);
     background-size: 100%;
     background-repeat: no-repeat;
+    padding-bottom: 90px;
   }
 
   &__item:nth-child(3)  {
-    margin-left: 40%;
+    margin-left: 50%;
     background-image: url(../img/reasons__item_3.svg);
     background-size: 100%;
     background-repeat: no-repeat;
+    padding-bottom: 90px;
   }
 
   &__item:nth-child(4)  {
-    margin-right: 40%;
+    margin-right: 55%;
     background-image: url(../img/reasons__item_4.svg);
     background-size: 100%;
     background-repeat: no-repeat;
+    padding-bottom: 230px;
   }
 
   &__item-text {
-    //@extend .row;
     font-family: $font-family;
     font-size: 36px;
     color: $white;

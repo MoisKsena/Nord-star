@@ -1,6 +1,6 @@
 .info {
-  padding-top: 321px;
-  padding-bottom: 62px;
+  margin-top: 500px;
+  margin-bottom: 62px;
 
   &__image {
     @extend .col-sm-6;
@@ -9,7 +9,10 @@
   }
 
   &__text {
-    @extend .col-sm-4;
+    @extend .col-sm-6;
+    padding-left: 130px;
+    padding-top: 350px;
+    max-width: 550px;
   }
 
   &__title {
@@ -18,5 +21,6 @@
 
   &__descr {
     @extend .col-sm-10;
+    padding-top: 25px;  
   }
 }

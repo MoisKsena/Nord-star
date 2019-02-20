@@ -1,30 +1,19 @@
 .feedback {
-  padding-top: 500px;
-  &__wrap {
-    position: relative;
-    padding-top: 252px;
-  }
-
-  &__title {
-    width: 501px;
-    height: 140px;
-    margin-bottom: 226px;
-  }
-
-  &__img {
-    position: absolute;
-    right: 0;
-    top: 77.49%;
-    bottom: 16.98%;
-    background-image:
-      url('../img/feedback.png');
-    background-repeat: no-repeat;
-    width: 705px;
-    height: 812px;  
-  }
+  position: relative;
+  margin-top: 150px;
 
   &__reviews {
-    margin-right: 242px;
+    @extend .col-sm-4;
+  }
+
+  &__reviews-title {
+    margin-bottom: 226px;
+    font-family: $font-family-bold;
+    font-size: 64px;
+  }
+
+  &__item {
+    padding-top: 8px;
   }
 
   &__item:nth-child(2) {
@@ -35,12 +24,30 @@
     display: none;
   }
 
+  &__item-title {
+    font-family: $font-family-bold;
+    font-size: 36px;
+  }
+
   &__item-descr {
-    font-weight: bold;
+    font-family: $font-family-bold;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 2;
   }
 
   &__item-text {
-    width: 485px;
-    height: 316px;
+    padding-top: 42px;
+    font-family: $font-family;
+    font-size: 20px;
+    line-height: 1.7;
+  }
+
+  &__img {
+    @extend .col-sm-4;
+
+    &--position {
+      @extend .col-sm-4;
+    }
   }
 }

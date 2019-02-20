@@ -16,21 +16,23 @@
   }
 
   &__inner-header {
-    @extend .col-sm-12;
+    @extend .row;
   }
 
   &__header {
-    @extend .col-sm-8;
-    max-width: 728px;
+    @extend .col-sm-6;
+    padding-left: 5%;
     font-family: $font-family-bold;
     font-size: $font-size-h1;
 
     @media (max-width:1335px) {
+      padding-left: 0;
       font-family: $font-family;
       font-size: 64px;
     }
 
     @media (max-width:361px) {
+      padding-left: 0;
       font-family: $font-family;
       font-size: 30px;
     }
@@ -41,6 +43,7 @@
   }
 
   &__descr {
+    padding-left: 5%;
     opacity: 0.52;
     font-family: $font-family;
     font-size: $font-size-xs;
@@ -74,6 +77,8 @@
   &__btn {
     @extend .col-sm-12;
     margin-top: 80px;
+    margin-bottom: 321px;
+    padding-left: 5%;
 
     @media (max-width:361px) {
       display: none;
@@ -90,6 +95,9 @@
     background-color: $white;
     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
     border-radius: 40px;
+    font-family: $font-family-bold;
+    font-weight: 700;
+    font-size: 24px;
   }
 
   &__mobilbtn {
