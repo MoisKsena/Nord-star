@@ -112,14 +112,12 @@
     
 
     @media (max-width:769px) {
-      display: flex;
-      
+      display: flex;    
       height: 140px;
       margin-top: 162px;
     } 
     
     @media (max-width:361px) {
-   
       height: 70px;
       margin-top: 60px;
     }
@@ -139,6 +137,5 @@
     @media (max-width:361px) {
       font-size: 18px;
     }
-  }
-  
+  } 
 }
