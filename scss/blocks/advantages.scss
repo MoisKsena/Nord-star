@@ -4,6 +4,14 @@
     @extend .row;
     max-width: 770px;
     padding-top: 226px;
+
+    @media (max-width:769px) {
+      padding-left: 40px;
+    }
+  
+    @media (max-width:361px) {
+      padding-left: 40px;
+    }
   }
 
   &__inner {
@@ -13,6 +21,16 @@
 
   &__item {
     @extend .col-sm-4;
+
+    @media (max-width:769px) {
+      display: flex;
+      width: 100%;
+      
+    }
+  
+    @media (max-width:361px) {
+      
+    }
   
     
   }

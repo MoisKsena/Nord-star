@@ -1,6 +1,14 @@
 .resume {
   &__inner {
     @extend .row;
+
+    @media (max-width:769px) {
+      display: none;
+    }
+  
+    @media (max-width:361px) {
+      display: none;
+    } 
   }
   &__title {
     @extend .col-sm-6;
@@ -19,9 +27,32 @@
   }
   &__mobil {
     display: none;
+
+    @media (max-width:769px) {
+      display: block;
+    }
+  
+    @media (max-width:361px) {
+      display: block;
+    } 
   }
   &__mobil-title {
+    @media (max-width:769px) {
+      padding-left: 40px;
+    }
+  
+    @media (max-width:361px) {
+      padding-left: 40px;
+    }
   }
   &__mobil-descr {
+    @media (max-width:769px) {
+      padding-left: 40px;
+      width: 70%;
+    }
+  
+    @media (max-width:361px) {
+      padding-left: 40px;
+    }
   }
 }
