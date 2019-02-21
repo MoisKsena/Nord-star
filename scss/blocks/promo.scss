@@ -1,18 +1,13 @@
 .promo {
+  width: 100%;
   padding-top: 359px;
 
-  @media (max-width:1335px) {
-    margin: 0 auto;
-    padding-left: 44px;
-    padding-right: 44px; 
+  @media (max-width:769px) {
     padding-top: 387px;  
   }
 
   @media (max-width:361px) {
-    margin: 0 auto;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 200px;
+    padding-top: 150px;
   }
 
   &__inner-header {
@@ -22,18 +17,22 @@
   &__header {
     @extend .col-sm-6;
     padding-left: 5%;
+    padding-top: 0;
     font-family: $font-family-bold;
     font-size: $font-size-h1;
 
-    @media (max-width:1335px) {
-      min-width: 768px;
-      padding-left: 0;
+    @media (max-width:769px) {
+      min-width: 70%;
+      padding-top: 387px;
+      padding-left: 40px;
       font-family: $font-family;
       font-size: $font-size-h1-mobile;
     }
 
     @media (max-width:361px) {
-      padding-left: 0;
+      width: 60%;
+      padding-left: 20px;
+      padding-top: 0;
       font-family: $font-family;
       font-size: 30px;
     }
@@ -49,7 +48,7 @@
     font-family: $font-family;
     font-size: $font-size-xs;
 
-    @media (max-width:1335px) {
+    @media (max-width:769px) {
       display: none;
     }
 
@@ -61,17 +60,23 @@
   &__descr-mobil {
     display: none;
 
-    @media (max-width:1335px) {
+    @media (max-width:769px) {
       display: flex;
-      width: 25%;
+      width: 60%;
+      padding-top: 100px;
+      padding-left: 40px;
       opacity: 0.52;
+      font-size: 24px;
     }
 
     @media (max-width:361px) {
       display: flex;
-      width: 100%;
+      width: 60%;
+      padding-bottom: 50px;
+      padding-left: 20px;
+      padding-top: 40px;
       opacity: 0.52;
-      font-size: 18px;
+      font-size: 12px;
     }
   }
 
@@ -81,11 +86,11 @@
     margin-bottom: 321px;
     padding-left: 5%;
 
-    @media (max-width:361px) {
+    @media (max-width:769px) {
       display: none;
     }
 
-    @media (max-width:1335px) {
+    @media (max-width:361px) {
       display: none;
     }
   }
@@ -102,19 +107,38 @@
     font-size: 24px;
   }
 
-  &__mobilbtn {
+  &__mobilbtn { 
     display: none;
+    
 
+    @media (max-width:769px) {
+      display: flex;
+      
+      height: 140px;
+      margin-top: 162px;
+    } 
+    
     @media (max-width:361px) {
-      display: flex;
-    }
-
-    @media (max-width:1335px) {
-      display: flex;
-      width: 100%;
+   
+      height: 70px;
+      margin-top: 60px;
     }
   }
 
   &__mobilbtn-text {
+    width: 100%;
+    border: none;
+    background-color: $violet;
+    font-family: $font-family-bold;
+    color: $white;
+
+    @media (max-width:769px) {
+      font-size: 24px;
+    }
+
+    @media (max-width:361px) {
+      font-size: 18px;
+    }
   }
+  
 }

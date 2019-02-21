@@ -23,10 +23,18 @@ body {
   background-position: 100% 0, 0 0;
   background-repeat: no-repeat, repeat;
 
+  @media (max-width:769px) {
+    background-size: 300%, 100%;
+    background-position: 30% -150px, 0 0;
+  }
+  
   @media (max-width:361px) {
-    background-size: 219%, 100%;
-    background-position: 55% 0, 0 0;
-  } 
+    background-size: 230%, 100%;
+    background-position: 50% -100px, 0 0;
+  }
+  
+  
+
 }
 
 [tabindex='-1']:focus {

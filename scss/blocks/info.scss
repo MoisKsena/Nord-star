@@ -7,16 +7,40 @@
   background-size: 49%;
   background-position: 40px 0;
 
+  @media (max-width:769px) {
+    margin-top: 144px;
+    background-image: url('../img/infoMobile.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 50% 0;
+  }
+
+  @media (max-width:361px) {
+    margin-top: 144px;
+    background-image: url('../img/infoMobile.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 50%;
+  }
+
   &__text {
     @extend .row;
     margin-left: 50%;
     padding-left: 130px;
     padding-top: 290px;
+
+    @media (max-width:769px) {
+      display: none;
+    }
+  
+    @media (max-width:361px) {
+      display: none;
+    }
     
   }
 
   &__title {
-    max-width: 500px;;
+    max-width: 500px;
   }
 
   &__descr {
@@ -26,4 +50,40 @@
     font-size: $font-size; 
     line-height: 1.9;
   }
+
+  &__text-mobile {
+    @extend .row;
+    display: none;
+
+    @media (max-width:769px) {
+      display: flex;
+
+    }
+  
+    @media (max-width:361px) {
+      display: flex;
+
+    }
+
+    &--title {
+      @extend .col-sm-5;
+      padding-left: 38px;
+      font-family: $font-family;
+      
+
+      @media (max-width:769px) {
+        font-size: $font-size-h1-mobile;
+  
+      }
+    
+      @media (max-width:361px) {
+        font-size: 30px;
+  
+      }
+    }
+    &--descr {
+      @extend .col-sm-5;
+    }
+  }
 }
+

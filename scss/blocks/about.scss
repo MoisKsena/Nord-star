@@ -3,6 +3,14 @@
   margin-top: 123px;
   margin-bottom: 220px;
 
+  @media (max-width:769px) {
+      
+  }
+
+  @media (max-width:361px) {
+    
+  }
+
   &__main-text {
     display: none;
     &--title {
@@ -51,6 +59,13 @@
   }
   &__main-image {
     @extend .col-sm-6;
- 
+    
+    @media (max-width:769px) {
+      display: none;  
+    }
+  
+    @media (max-width:361px) {
+      display: none;
+    }
   }
 }

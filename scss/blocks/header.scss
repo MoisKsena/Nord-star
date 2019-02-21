@@ -1,17 +1,26 @@
 .header {
   padding-top: 125px;
 
-  @media (max-width:1335px) {
+  @media (max-width:769px) {
     padding-top: 103px;
     margin-left: 44px; 
   }
 
   @media (max-width:361px) {
     padding-top: 50px;
+    margin-left: 20px;
   }
 
   &__tel a {
     text-decoration: none;
+
+    @media (max-width:769px) {
+      color: $white;
+    }
+
+    @media (max-width:361px) {
+      color: $white;
+    }
   }
 
   &__tel {
@@ -21,7 +30,15 @@
     font-size: 18px;
     color: $black;
 
-    @media (max-width:1335px) {
+    @media (max-width:769px) {
+      padding-left: 0;
+      font-family: $font-family-bold;
+      font-size: 24px;
+    }
+
+    @media (max-width:361px) {
+      padding-left: 0;
+      font-family: $font-family-bold;
       font-size: 24px;
     }
   }
@@ -30,7 +47,7 @@
     @extend .col-sm-7;
     
 
-    @media (max-width:1335px) {
+    @media (max-width:769px) {
       display: none;  
     }
   }
