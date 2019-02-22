@@ -4,7 +4,7 @@
   margin-bottom: 220px;
 
   @media (max-width:769px) {
-      
+      margin-top: 237px;
   }
 
   @media (max-width:361px) {
@@ -13,16 +13,44 @@
 
   &__main-text {
     display: none;
+
+    @media (max-width:769px) {
+      display: block;
+      padding-left: 40px;
+    }
+  
+    @media (max-width:361px) {
+      display: block;
+    }
+
     &--title {
+      width: 60%;
     }
     &--explan {
+      font-family: $font-family;
+      font-size: 34px;
     }
   }
 
   &__main {
-    @extend .col-sm-6;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__main-column {
+    width: 50%;
     padding-top: 720px;
     padding-left: 22%;
+
+    @media (max-width:769px) {
+      width: 70%;
+      padding-left: 40px;
+      padding-top: 123px;
+    }
+  
+    @media (max-width:361px) {
+      
+    }
   }
 
   &__main-item {
@@ -58,7 +86,7 @@
     }
   }
   &__main-image {
-    @extend .col-sm-6;
+    width: 50%;
     
     @media (max-width:769px) {
       display: none;  

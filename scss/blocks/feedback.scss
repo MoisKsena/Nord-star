@@ -1,5 +1,5 @@
 .feedback {
-  @extend .row;
+  display: flex;
   margin-top: 150px;
   margin-bottom: 100px;
   background-image: url('../img/feedback.svg');
@@ -8,7 +8,7 @@
   background-position: 80% 70%;
 
   &__reviews {
-    @extend .col-sm-6;
+    //@extend .col-sm-6;
     margin-bottom: 100px;
   }
 

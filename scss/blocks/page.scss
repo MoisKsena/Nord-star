@@ -1,2 +1,37 @@
+/*
+body {
+  background-color: #FFF;
+  margin: 0;
+  min-height: 100%;
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $text-color;
+  word-break: break-word;
+  background-image: url('../img/backgr.svg');
+  background-size: 100%;
+  background-position: 0 0;
+  background-repeat: repeat;
 
+  @media (max-width:1680px) {
+    background-image: url('../img/hederImg.svg');
+    background-size: 78%;
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+  }
+
+  @media (max-width:769px) {
+    background-image: url('../img/header_mobil.svg');
+    background-size: 100%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+  
+  @media (max-width:361px) {
+    background-image: url('../img/header_mobil.svg');
+    background-size: 100%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+}*/
 

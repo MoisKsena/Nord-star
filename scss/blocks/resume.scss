@@ -1,6 +1,7 @@
 .resume {
   &__inner {
     @extend .row;
+    padding-top: 80px;
 
     @media (max-width:769px) {
       display: none;
