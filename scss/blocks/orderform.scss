@@ -1,5 +1,5 @@
 .orderform {
-  
+  @extend .row;
 
   &__title {
     @extend .col-sm-7;

@@ -1,4 +1,5 @@
 .footer {
+  @extend .row;
   margin-top: 220px;
   background-image: url('../img/orderform.svg');
   background-repeat: no-repeat;

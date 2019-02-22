@@ -1,4 +1,6 @@
 .reasons {  
+  @extend .row;
+  
   &__text {
     @extend .row;
     margin-top: -690px;

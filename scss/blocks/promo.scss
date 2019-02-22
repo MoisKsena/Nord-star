@@ -1,6 +1,7 @@
 .promo {
+
   width: 100%;
-  padding-top: 359px;
+  padding-top: 300px;
 
   @media (max-width:769px) {
     padding-top: 387px;  
@@ -16,7 +17,7 @@
 
   &__header {
     @extend .col-sm-6;
-    padding-left: 5%;
+    padding-left: 100px;
     padding-top: 0;
     font-family: $font-family-bold;
     font-size: $font-size-h1;
