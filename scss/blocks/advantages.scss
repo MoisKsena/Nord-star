@@ -1,23 +1,23 @@
 .advantages {
+  padding: 0px 15px;
 
   &__title {
     @extend .row;
-    max-width: 770px;
     padding-top: 226px;
+    padding-left: 40px;
 
-    @media (max-width:769px) {
-      padding-left: 40px;
+
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+      max-width: 770px;
+      padding-left: 0;
     }
-  
-    @media (max-width:361px) {
-      padding-left: 40px;
-    }
+
   }
 
   &__inner {
     @extend .row;
     width: 85%;
-    padding-top: 100px;
+    //padding-top: 100px;
     flex-wrap: nowrap;
     justify-content: space-between;
 
@@ -26,15 +26,15 @@
     }
 
     
-    @media (max-width:769px){
+    @media (min-width: map-get($grid-breakpoints, sm)) {
       flex-wrap: wrap;
       padding-top: 57px;
-      padding-left: 180px;
+      //padding-left: 180px;
     }
 
     @media (max-width:361px) {
       flex-wrap: wrap;
-      padding-left: 50px;
+      //padding-left: 50px;
     }
   }
 
@@ -63,9 +63,9 @@
 
   &__item-imgfirst {
     height: 530px;
-    margin-right: -55px;
     background-image: url('../img/advantages1.svg');
-    background-position: 0 -20px;
+    background-position: 50% 0;
+    background-size: 100%;
     background-repeat: no-repeat;
 
     @media (max-width:769px) {
