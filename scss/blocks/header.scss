@@ -1,20 +1,31 @@
 .header {
+  height: 140px;
   padding-left: 20px;
-  padding-top: 103px;
+  padding-top: 50px;
+  
+  @media (min-width: map-get($grid-breakpoints, sm)) {
+    padding-top: 103px;
+  }
 
   &__tel {
     @extend .col-sm-6;
+    
     font-family: $font-family;
     font-size: 18px;
     color: $black; 
 
     @media (min-width: map-get($grid-breakpoints, sm)) {
-      padding-left: 20px;
+      padding-left: 20px;  
     }
   }
 
   &__tel a{
     text-decoration: none;
+    color: $white;
+
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+      color: $black;   
+    }
   }
 
   &__nav {
@@ -30,7 +41,8 @@
     }
 
     @media (min-width: map-get($grid-breakpoints, lg)) {
-      display: flex;   
+      display: flex;  
+      justify-content: flex-end; 
     }
     
     list-style-type: none;

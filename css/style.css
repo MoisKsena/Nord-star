@@ -1591,22 +1591,22 @@ body {
   line-height: 1.4;
   color: #232323;
   word-break: break-word;
-  background-image: url("../img/heder_img.svg"), url("../img/backgr.svg");
-  background-size: 78%, 100%;
-  background-position: 100% 0, 0 0;
-  background-repeat: no-repeat, repeat; }
-  @media (max-width: 769px) {
+  background-image: url("../img/woman_mobile.svg"), url("../img/bcgheader_mobil.svg"), url("../img/backgr.svg");
+  background-size: 40%, 100%, 100%;
+  background-position: 100% 8%, 100% 0, 0 0;
+  background-repeat: no-repeat, no-repeat, repeat; }
+  @media (min-width: 768px) {
     body {
-      background-image: url("../img/header_mobil.svg"), url("../img/backgr.svg");
-      background-size: 100%, 100%;
-      background-position: 100% 0, 0 0;
-      background-repeat: no-repeat, repeat; } }
-  @media (max-width: 361px) {
+      background-image: url("../img/woman_mobile.svg"), url("../img/bcgheader.svg"), url("../img/backgr.svg");
+      background-size: 30%, 120%, 100%;
+      background-position: 100% 10%, 98% 0, 0 0;
+      background-repeat: no-repeat, no-repeat, repeat; } }
+  @media (min-width: 1200px) {
     body {
-      background-image: url("../img/header_mobil.svg"), url("../img/backgr.svg");
-      background-size: 100%, 100%;
-      background-position: 100% 0, 0 0;
-      background-repeat: no-repeat, repeat; } }
+      background-image: url("../img/woman.svg"), url("../img/bcgheader.svg"), url("../img/backgr.svg");
+      background-size: 30%, 85%, 100%;
+      background-position: 100% 10%, 100% 0, 0 0;
+      background-repeat: no-repeat, no-repeat, repeat; } }
 
 [tabindex='-1']:focus {
   outline: none !important; }
@@ -1810,45 +1810,13 @@ pre {
     -o-tab-size: 2;
        tab-size: 2; }
 
-/*
-body {
-  background-color: #FFF;
-  margin: 0;
-  min-height: 100%;
-  font-family: $font-family;
-  font-size: $font-size;
-  line-height: $line-height;
-  color: $text-color;
-  word-break: break-word;
-  background-image: url('../img/backgr.svg');
-  background-size: 100%;
-  background-position: 0 0;
-  background-repeat: repeat;
-
-  @media (max-width:1680px) {
-    background-image: url('../img/hederImg.svg');
-    background-size: 78%;
-    background-position: 100% 0;
-    background-repeat: no-repeat;
-  }
-
-  @media (max-width:769px) {
-    background-image: url('../img/header_mobil.svg');
-    background-size: 100%;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-  }
-  
-  @media (max-width:361px) {
-    background-image: url('../img/header_mobil.svg');
-    background-size: 100%;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-  }
-}*/
 .header {
+  height: 140px;
   padding-left: 20px;
-  padding-top: 103px; }
+  padding-top: 50px; }
+  @media (min-width: 768px) {
+    .header {
+      padding-top: 103px; } }
   .header__tel {
     font-family: Ubuntu-Regular, sans-serif;
     font-size: 18px;
@@ -1857,7 +1825,11 @@ body {
       .header__tel {
         padding-left: 20px; } }
   .header__tel a {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #ffffff; }
+    @media (min-width: 1200px) {
+      .header__tel a {
+        color: #232323; } }
   .header__nav-list {
     display: none;
     list-style-type: none; }
@@ -1868,7 +1840,10 @@ body {
       .header__nav-list {
         display: -webkit-box;
         display: -ms-flexbox;
-        display: flex; } }
+        display: flex;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end; } }
   .header__nav-item {
     padding-left: 74px; }
   .header__nav-link {
@@ -1881,13 +1856,13 @@ body {
 .promo {
   position: relative;
   padding: 0 20px;
-  height: calc(100vh - 103px); }
+  height: calc(100vh - 160px); }
   @media (min-width: 1200px) {
     .promo {
-      height: calc(100vh - 103px); } }
+      height: calc(100vh - 160px); } }
   @media (min-width: 1440px) {
     .promo {
-      height: calc(100vh - 103px); } }
+      height: calc(100vh - 160px); } }
   .promo__header {
     width: 70%;
     padding-top: 100px;
@@ -1912,15 +1887,17 @@ body {
     font-size: 18px; }
     @media (min-width: 1200px) {
       .promo__descr {
-        display: block; } }
+        display: block;
+        padding-left: 20px; } }
   .promo__descr-mobil {
     padding-top: 20px;
     opacity: 0.52;
     font-family: Ubuntu-Regular, sans-serif;
-    font-size: 18px; }
+    font-size: 12px; }
     @media (min-width: 768px) {
       .promo__descr-mobil {
-        padding-left: 20px; } }
+        padding-left: 20px;
+        font-size: 18px; } }
     @media (min-width: 1200px) {
       .promo__descr-mobil {
         display: none; } }
@@ -1965,6 +1942,9 @@ body {
 
 .info {
   padding-left: 20px; }
+  @media (min-width: 1200px) {
+    .info {
+      padding-top: 300px; } }
   .info__image {
     display: none; }
     @media (min-width: 1200px) {

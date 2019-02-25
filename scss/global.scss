@@ -18,23 +18,23 @@ html {
   line-height: $line-height;
   color: $text-color;
   word-break: break-word;
-  background-image: url('../img/heder_img.svg'), url('../img/backgr.svg');
-  background-size: 78%, 100%;
-  background-position: 100% 0, 0 0;
-  background-repeat: no-repeat, repeat;
+  background-image: url('../img/woman_mobile.svg'), url('../img/bcgheader_mobil.svg'), url('../img/backgr.svg');
+  background-size: 40%, 100%, 100%;
+  background-position: 100% 8%, 100% 0, 0 0;
+  background-repeat: no-repeat, no-repeat, repeat;
 
-  @media (max-width:769px) {
-    background-image: url('../img/header_mobil.svg'), url('../img/backgr.svg');
-    background-size: 100%, 100%;
-    background-position: 100% 0, 0 0;
-    background-repeat: no-repeat, repeat;
+  @media (min-width: map-get($grid-breakpoints, sm)) {
+    background-image: url('../img/woman_mobile.svg'), url('../img/bcgheader.svg'), url('../img/backgr.svg');
+    background-size: 30%, 120%, 100%;
+    background-position: 100% 10%, 98% 0, 0 0;
+    background-repeat: no-repeat, no-repeat, repeat;   
   }
-  
-  @media (max-width:361px) {
-    background-image: url('../img/header_mobil.svg'), url('../img/backgr.svg');
-    background-size: 100%, 100%;
-    background-position: 100% 0, 0 0;
-    background-repeat: no-repeat, repeat;
+
+  @media (min-width: map-get($grid-breakpoints, lg)) {
+    background-image: url('../img/woman.svg'), url('../img/bcgheader.svg'), url('../img/backgr.svg');
+    background-size: 30%, 85%, 100%;
+    background-position: 100% 10%, 100% 0, 0 0;
+    background-repeat: no-repeat, no-repeat, repeat;   
   }
 }
 

@@ -1,6 +1,10 @@
 .info {
   padding-left: 20px;
 
+  @media (min-width: map-get($grid-breakpoints, lg)) {
+    padding-top: 300px;
+  }
+
   &__image {
     display: none;
 
