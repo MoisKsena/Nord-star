@@ -1953,7 +1953,7 @@ pre {
         display: -ms-flexbox;
         display: flex;
         width: 50%;
-        height: 1725px;
+        height: 1560px;
         background-image: url("../img/info.svg");
         background-repeat: no-repeat;
         background-size: 100%; } }
@@ -2004,175 +2004,140 @@ pre {
           font-size: 24px; } }
   .info__image-mobile {
     width: 100%;
-    height: 651px;
+    height: 400px;
     margin-top: 50px;
     background-image: url("../img/info_mobile.svg");
     background-repeat: no-repeat;
     background-size: 100%; }
     @media (min-width: 768px) {
       .info__image-mobile {
+        height: 651px;
         margin-top: 90px;
         margin-left: 158px; } }
     @media (min-width: 1200px) {
       .info__image-mobile {
         display: none; } }
 
-.reasons__text {
-  margin-top: -690px;
-  padding-left: 52%; }
-  @media (max-width: 769px) {
+.reasons {
+  padding: 0 20px; }
+  @media (min-width: 1200px) {
+    .reasons {
+      margin-top: -700px; } }
+  @media (min-width: 1440px) {
+    .reasons {
+      margin-top: -600px; } }
+  @media (min-width: 1920px) {
+    .reasons {
+      margin-top: -300px; } }
+  @media (min-width: 768px) {
     .reasons__text {
-      margin-top: -350px;
       padding-left: 40px; } }
-  @media (max-width: 361px) {
+  @media (min-width: 1200px) {
     .reasons__text {
-      padding-left: 20px; } }
-
-.reasons__text-title {
-  width: 100%;
-  font-family: Ubuntu-Bold, sans-serif;
-  font-size: 64px; }
-
-.reasons__text-descr {
-  padding-top: 20px;
-  padding-bottom: 114px;
-  font-family: Ubuntu-Regular, sans-serif;
-  font-size: 20px; }
-
-.reasons__inner-list {
-  padding-top: 80px; }
-  @media (max-width: 769px) {
-    .reasons__inner-list {
-      padding-top: 132px;
-      padding-left: 40px; } }
-
-.reasons__item:nth-child(1) {
-  margin-left: 45%;
-  background-image: url(../img/reasons__item_1.svg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  padding-bottom: 240px; }
-  @media (max-width: 769px) {
-    .reasons__item:nth-child(1) {
-      margin-left: 0;
-      background-size: 95%;
-      padding-bottom: 167px; } }
-
-.reasons__item:nth-child(2) {
-  margin-right: 45%;
-  background-image: url(../img/reasons__item_2.svg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  padding-bottom: 124px; }
-  @media (max-width: 769px) {
-    .reasons__item:nth-child(2) {
-      margin-right: 0;
-      background-size: 95%;
-      padding-bottom: 134px; } }
-
-.reasons__item:nth-child(3) {
-  margin-left: 50%;
-  background-image: url(../img/reasons__item_3.svg);
-  background-size: 93%;
-  background-repeat: no-repeat;
-  padding-bottom: 132px; }
-  @media (max-width: 769px) {
-    .reasons__item:nth-child(3) {
-      margin-left: 0;
-      background-size: 95%;
-      padding-bottom: 138px; } }
-
-.reasons__item:nth-child(4) {
-  margin-right: 55%;
-  background-image: url(../img/reasons__item_4.svg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  padding-bottom: 170px; }
-  @media (max-width: 769px) {
-    .reasons__item:nth-child(4) {
-      margin-right: 0;
-      background-size: 95%; } }
-
-.reasons__item-text {
-  font-family: Ubuntu-Regular, sans-serif;
-  font-size: 36px;
-  line-height: 1.2;
-  color: #ffffff; }
-  @media (max-width: 769px) {
-    .reasons__item-text {
-      font-size: 24px; } }
-  @media (max-width: 361px) {
-    .reasons__item-text {
-      font-size: 18px; } }
-  .reasons__item-text--first {
-    padding-top: 80px;
-    padding-left: 100px;
-    padding-right: 0; }
-    @media (max-width: 769px) {
+      padding-left: 52%; } }
+  @media (min-width: 1440px) {
+    .reasons__text {
+      padding-left: 47%; } }
+  @media (min-width: 1920px) {
+    .reasons__text {
+      padding-left: 45%; } }
+  .reasons__text-title {
+    width: 100%;
+    font-family: Ubuntu-Bold, sans-serif;
+    font-size: 30px; }
+    @media (min-width: 768px) {
+      .reasons__text-title {
+        font-size: 64px; } }
+    @media (min-width: 1200px) {
+      .reasons__text-title {
+        font-size: 64px; } }
+  .reasons__text-descr {
+    padding-top: 20px;
+    padding-bottom: 114px;
+    font-family: Ubuntu-Regular, sans-serif;
+    font-size: 20px; }
+    @media (min-width: 1200px) {
+      .reasons__text-descr {
+        font-size: 24px; } }
+  .reasons__inner-list {
+    padding: 0 20px; }
+  .reasons__item:nth-child(1) {
+    padding-left: 0;
+    padding-bottom: 100px;
+    background-image: url(../img/reasons__item_1.svg);
+    background-size: 100%;
+    background-repeat: no-repeat; }
+    @media (min-width: 768px) {
+      .reasons__item:nth-child(1) {
+        padding-bottom: 167px; } }
+    @media (min-width: 1200px) {
+      .reasons__item:nth-child(1) {
+        margin-left: 40%;
+        background-size: 100%;
+        background-repeat: no-repeat; } }
+  .reasons__item:nth-child(2) {
+    margin-right: 0;
+    padding-bottom: 150px;
+    background-image: url(../img/reasons__item_2.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 100px; }
+    @media (min-width: 1200px) {
+      .reasons__item:nth-child(2) {
+        margin-right: 45%;
+        background-size: 100%;
+        background-repeat: no-repeat; } }
+  .reasons__item:nth-child(3) {
+    margin-left: 0;
+    padding-bottom: 150px;
+    background-image: url(../img/reasons__item_3.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 100px; }
+    @media (min-width: 1200px) {
+      .reasons__item:nth-child(3) {
+        margin-left: 45%;
+        background-size: 100%;
+        background-repeat: no-repeat; } }
+  .reasons__item:nth-child(4) {
+    margin-right: 0;
+    background-image: url(../img/reasons__item_4.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 100px; }
+    @media (min-width: 1200px) {
+      .reasons__item:nth-child(4) {
+        margin-right: 45%;
+        background-size: 100%;
+        background-repeat: no-repeat; } }
+  .reasons__item-text {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    font-family: Ubuntu-Regular, sans-serif;
+    font-size: 12px;
+    line-height: 1.2;
+    color: #ffffff; }
+    @media (min-width: 768px) {
+      .reasons__item-text {
+        padding-top: 80px;
+        font-size: 24px; } }
+    @media (min-width: 1200px) {
+      .reasons__item-text {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: left;
+        font-size: 36px; } }
+    @media (min-width: 1200px) {
       .reasons__item-text--first {
-        padding-top: 70px;
-        padding-left: 50px;
-        padding-right: 90px;
-        line-height: 1.5;
-        text-align: center; } }
-    @media (max-width: 361px) {
-      .reasons__item-text--first {
         padding-top: 80px;
         padding-left: 100px;
-        text-align: center; } }
-  .reasons__item-text--second {
-    padding-top: 80px;
-    padding-left: 100px; }
-    @media (max-width: 769px) {
-      .reasons__item-text--second {
-        padding-top: 60px;
-        padding-left: 0;
-        line-height: 1.5;
-        text-align: center; } }
-    @media (max-width: 361px) {
-      .reasons__item-text--second {
-        padding-top: 80px;
-        padding-left: 100px;
-        text-align: center; } }
-  .reasons__item-text--third {
-    padding-top: 80px;
-    padding-left: 80px; }
-    @media (max-width: 769px) {
-      .reasons__item-text--third {
-        padding-top: 80px;
-        padding-left: 0;
-        text-align: center; } }
-    @media (max-width: 361px) {
-      .reasons__item-text--third {
-        padding-top: 80px;
-        padding-left: 0;
-        text-align: center; } }
-  .reasons__item-text--fourth {
-    display: block;
-    padding-top: 80px;
-    padding-left: 120px; }
-    @media (max-width: 769px) {
-      .reasons__item-text--fourth {
-        display: none; } }
-    @media (max-width: 361px) {
-      .reasons__item-text--fourth {
-        display: none; } }
-  .reasons__item-text--mobile {
-    display: none; }
-    @media (max-width: 769px) {
-      .reasons__item-text--mobile {
-        display: block;
-        padding-top: 80px;
-        padding-left: 160px;
-        padding-right: 200px;
-        line-height: 1.5;
-        text-align: center; } }
-    @media (max-width: 361px) {
-      .reasons__item-text--mobile {
-        display: block;
-        padding-top: 80px;
-        padding-left: 100px;
-        text-align: center; } }
+        padding-right: 0; } }
+    .reasons__item-text--fourth {
+      display: none; }
+    .reasons__item-text--mobile {
+      display: block; }
 
 .resume__inner {
   padding-top: 80px; }
