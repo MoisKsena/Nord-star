@@ -1,83 +1,52 @@
 .header {
-  @extend .row;
-  padding-top: 120px;
-
-  @media (max-width:769px) {
-    padding-top: 103px;
-    margin-left: 44px; 
-  }
-
-  @media (max-width:361px) {
-    padding-top: 50px;
-    margin-left: 20px;
-  }
-
-  &__tel a {
-    text-decoration: none;
-
-    @media (max-width:769px) {
-      color: $white;
-    }
-
-    @media (max-width:361px) {
-      color: $white;
-    }
-  }
+  padding-left: 20px;
+  padding-top: 103px;
 
   &__tel {
-    @extend .col-sm-4;  
-    padding-left: 130px;
+    @extend .col-sm-6;
     font-family: $font-family;
     font-size: 18px;
-    color: $black;
+    color: $black; 
 
-    @media (max-width:769px) {
-      padding-left: 0;
-      font-family: $font-family-bold;
-      font-size: 24px;
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+      padding-left: 20px;
     }
+  }
 
-    @media (max-width:361px) {
-      padding-left: 0;
-      font-family: $font-family-bold;
-      font-size: 24px;
-    }
+  &__tel a{
+    text-decoration: none;
   }
 
   &__nav {
-    @extend .col-sm-7;
-    
-
-    @media (max-width:769px) {
-      display: none;  
-    }
+    @extend .col-sm-6;   
   }
 
   &__nav-list {
-    display: flex;
-    justify-content: flex-end;
+    display: none;
+    
+
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+      display: none;
+    }
+
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+      display: flex;   
+    }
+    
     list-style-type: none;
   }
 
   &__nav-item {
+    padding-left: 74px;
   }
 
   &__nav-link {
-    padding-left: 150px;
     text-decoration: none;
     font-family: $font-family;
     font-size: 18px;
     text-transform: uppercase;
     color: $white;
   }
-
-  &__btn-form {
-    @extend .col-sm-12;
-    
-  }
-
-
-
 }
 
 

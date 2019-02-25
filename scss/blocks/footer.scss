@@ -1,13 +1,10 @@
 .footer {
-  @extend .row;
-  margin-top: 220px;
-  background-image: url('../img/orderform.svg');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  //background-position: 0 0;
+  
+
+  
   
   &__tel {
-    @extend .col-sm-5;
+   
   }
 
   &__tel a{
@@ -18,7 +15,7 @@
   }
 
   &__adress {
-    @extend .col-sm-7;
+    
     opacity: 0.52;
     font-family: $font-family;
     font-size: $font-size-xs;

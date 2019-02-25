@@ -1,50 +1,36 @@
 .info {
-  height: 2000px;
-  margin-top: 510px;
-  margin-bottom: 62px;
-  background-image: url('../img/info.svg');
-  background-repeat: no-repeat;
-  background-size: 49%;
-  background-position: 40px 0;
+  padding-left: 20px;
 
-  @media (max-width:769px) {
-    margin-top: 144px;
-    background-image: url('../img/infoMobile.svg');
-    background-repeat: no-repeat;
-    background-size: 80%;
-    background-position: 50% 70%;
-  }
+  &__image {
+    display: none;
 
-  @media (max-width:361px) {
-    margin-top: 144px;
-    background-image: url('../img/infoMobile.svg');
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: 50%;
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+      display: flex;
+      width: 50%;
+      height: 1725px;
+      background-image: url('../img/info.svg');  
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
   }
 
   &__text {
     @extend .row;
-    margin-left: 50%;
-    padding-left: 130px;
-    padding-top: 290px;
-
-    @media (max-width:769px) {
-      display: none;
+    display: none;
+    
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+      display: flex;
+      width: 50%;
+      align-content: flex-start;
     }
-  
-    @media (max-width:361px) {
-      display: none;
-    } 
   }
 
   &__title {
-    max-width: 500px;
+    padding-top: 150px;
   }
 
   &__descr {
-    max-width: 460px;
-    padding-top: 25px; 
+    padding-top: 72px; 
     font-family: $font-family;
     font-size: $font-size; 
     line-height: 1.9;
@@ -52,41 +38,61 @@
 
   &__text-mobile {
     @extend .row;
-    display: none;
+    padding-top: 50px;
 
-    @media (max-width:769px) {
-      display: block;
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+      padding-top: 144px;
+      padding-left: 20px;
+      padding-right: 20px;
     }
-  
-    @media (max-width:361px) {
-      display: block;
+
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+      display: none;
     }
+    
 
     &--title {
-      padding-left: 40px;
       font-family: $font-family;
-      
-      @media (max-width:769px) {
+      font-size: 30px;
+
+      @media (min-width: map-get($grid-breakpoints, sm)) {
+        width: 80%;
         font-size: $font-size-h1-mobile;
-  
       }
-    
-      @media (max-width:361px) {
-        font-size: 30px;
+      
+      @media (min-width: map-get($grid-breakpoints, lg)) {
+        font-size: $font-size-h1-mobile;
       }
     }
+
     &--descr {
-      
-      @media (max-width:769px) {
-        padding-left: 40px;
-        margin-top: 68px;
+      width: 90%;
+      padding-top: 68px;
+      font-size: 18px;
+      line-height: 1.8;
+
+      @media (min-width: map-get($grid-breakpoints, sm)) {
         font-size: $font-size-xs;
-        line-height: 1.8;
+        
       }
-    
-      @media (max-width:361px) {
-        font-size: 18px;
-      }
+    }
+  }
+
+  &__image-mobile {
+    width: 100%;
+    height: 651px;
+    margin-top: 50px;
+    background-image: url('../img/infoMobile.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+      margin-top: 90px;
+      margin-left: 158px;
+    }
+
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+      display: none;
     }
   }
 }
