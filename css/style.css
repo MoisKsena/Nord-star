@@ -1591,7 +1591,7 @@ body {
   line-height: 1.4;
   color: #232323;
   word-break: break-word;
-  background-image: url("../img/hederImg.svg"), url("../img/backgr.svg");
+  background-image: url("../img/heder_img.svg"), url("../img/backgr.svg");
   background-size: 78%, 100%;
   background-position: 100% 0, 0 0;
   background-repeat: no-repeat, repeat; }
