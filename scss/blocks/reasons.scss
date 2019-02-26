@@ -61,7 +61,7 @@
   }
 
   &__inner-list {   
-    padding: 0 20px;
+    
   }
 
 
@@ -98,7 +98,7 @@
     padding-bottom: 100px;
 
     @media (min-width: map-get($grid-breakpoints, lg)) {
-      margin-right: 45%;
+      margin-right: 40%;
       background-size: 100%;
       background-repeat: no-repeat;
     }
@@ -145,25 +145,26 @@
     color: $white;
 
     @media (min-width: map-get($grid-breakpoints, sm)) {
-      padding-top: 80px;
       font-size: $font-size-xs;
     }
 
     @media (min-width: map-get($grid-breakpoints, lg)) {
-      padding-left: 0;
+      padding-left: 20px;
       padding-right: 0;
+      padding-top: 60px;
       text-align: left; 
+      font-size: 30px;
+    }
+
+    @media (min-width: map-get($grid-breakpoints, lgx)) {
+      padding-top: 80px;
+      padding-left: 40px;
       font-size: 36px;
     }
 
     &--first {
       
 
-      @media (min-width: map-get($grid-breakpoints, lg)) {
-        padding-top: 80px;
-        padding-left: 100px;
-        padding-right: 0;
-      }
     }
 
     &--second {
