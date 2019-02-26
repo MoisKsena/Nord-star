@@ -1593,13 +1593,19 @@ body {
   word-break: break-word;
   background-image: url("../img/woman_mobile.svg"), url("../img/bcgheader_mobil.svg"), url("../img/backgr.svg");
   background-size: 40%, 100%, 100%;
-  background-position: 100% 8%, 100% 0, 0 0;
+  background-position: 100% 4%, 100% 0, 0 0;
   background-repeat: no-repeat, no-repeat, repeat; }
   @media (min-width: 768px) {
     body {
       background-image: url("../img/woman_mobile.svg"), url("../img/bcgheader.svg"), url("../img/backgr.svg");
       background-size: 30%, 120%, 100%;
-      background-position: 100% 10%, 98% 0, 0 0;
+      background-position: 100% 5%, 98% 0, 0 0;
+      background-repeat: no-repeat, no-repeat, repeat; } }
+  @media (min-width: 992px) {
+    body {
+      background-image: url("../img/woman_mobile.svg"), url("../img/bcgheader_mobil.svg"), url("../img/backgr.svg");
+      background-size: 20%, 100%, 100%;
+      background-position: 100% 5%, 0 0, 0 0;
       background-repeat: no-repeat, no-repeat, repeat; } }
   @media (min-width: 1200px) {
     body {
@@ -1865,7 +1871,7 @@ pre {
       height: calc(100vh - 160px); } }
   .promo__header {
     width: 70%;
-    padding-top: 100px;
+    padding-top: 50px;
     font-family: Ubuntu-Bold, sans-serif;
     font-size: 30px; }
     @media (min-width: 768px) {
