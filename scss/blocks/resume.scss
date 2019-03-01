@@ -1,62 +1,39 @@
 .resume {
   @extend .row;
+  padding: 0 20px;
 
   &__inner {
-    @extend .row;
-    padding-top: 80px;
-
-    @media (max-width:769px) {
-      display: none;
-    }
-  
-    @media (max-width:361px) {
-      display: none;
-    } 
+    display: none;
+     
   }
   &__title {
     @extend .col-sm-6;
-    margin-left: 50%;
+    display: none;
     font-family: $font-family-bold;
     font-size: $font-size-h1-mobile;
-    padding-bottom: 20px;
+ 
   }
   &__descr {
     @extend .col-sm-6;
-    max-width: 480px;
-    margin-left: 50%;
     font-family: $font-family;
     font-size: 20px;
     line-height: 2;
   }
-  &__mobil {
-    display: none;
 
-    @media (max-width:769px) {
-      display: block;
-    }
-  
-    @media (max-width:361px) {
-      display: block;
-    } 
+  &__mobil {
+    
+   
   }
+
   &__mobil-title {
-    @media (max-width:769px) {
-      padding-left: 40px;
-    }
-  
-    @media (max-width:361px) {
-      padding-left: 40px;
-    }
+    font-family: $font-family-bold;
+    font-size: 30px;
+    
   }
+
   &__mobil-descr {
-    @media (max-width:769px) {
-      padding-left: 40px;
-      width: 70%;
-    }
-  
-    @media (max-width:361px) {
-      padding-left: 40px;
-      width: 100%;
-    }
+    font-family: $font-family;
+    font-size: 12px;
+    line-height: 1.8;
   }
 }
