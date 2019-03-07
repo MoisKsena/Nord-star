@@ -1,102 +1,67 @@
 .advantages {
-  padding: 0px 15px;
+  padding: 0px 20px;
+  margin-top: 225px;
 
   &__title {
     @extend .row;
-    padding-top: 226px;
-    padding-left: 40px;
+    padding-left: 20px;
+    font-size: 30px;
 
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+      width: 90%;
+      font-size: 64px;
+    }
 
     @media (min-width: map-get($grid-breakpoints, lg)) {
-      max-width: 770px;
-      padding-left: 0;
+      width: 50%;
     }
 
   }
 
   &__inner {
     @extend .row;
-    width: 85%;
-    //padding-top: 100px;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
 
-    @media (max-width:1440px){
-      width: 100%;
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+      flex-direction: row;
+      justify-content: space-between;
     }
 
-    
-    @media (min-width: map-get($grid-breakpoints, sm)) {
-      flex-wrap: wrap;
-      padding-top: 57px;
-      //padding-left: 180px;
-    }
-
-    @media (max-width:361px) {
-      flex-wrap: wrap;
-      //padding-left: 50px;
-    }
   }
 
   &__item {
-
-    @media (max-width:769px) {
-      display: block;
-    }
-  
-    @media (max-width:361px) {
-      
-    }
-  
-    &--third {
-      margin-right: -40px;
-    }
-  }
-
-  &__item:not(:first-child){
-    @media (max-width:769px) {
-      padding-top: 163px;
-    }
-    
+    padding-bottom: 163px;
   }
 
 
   &__item-imgfirst {
-    height: 530px;
+    height: 500px;
     background-image: url('../img/advantages1.svg');
-    background-position: 50% 0;
+    background-position: 0;
     background-size: 100%;
     background-repeat: no-repeat;
-
-    @media (max-width:769px) {
-      background-position: -50px -20px;
-    }
-  
-    @media (max-width:361px) {
-      background-position: -70px -20px;
-    } 
   }
 
+
   &__item-imgsecond {
-    height: 530px;
+    height: 500px;
     background-image: url('../img/advantages2.svg');
     background-position: 0;
+    background-size: 90%;
     background-repeat: no-repeat;
+
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+      background-size: 75%;
+    }
   }
 
   &__item-imgthird {
-    height: 530px;
+    height: 500px;
     background-image: url('../img/advantages3.svg');
-    background-position: -38px 0;
+    background-position: 0;
+    background-size: 100%;
     background-repeat: no-repeat;
-
-    @media (max-width:769px) {
-      background-position: -25px 0;
-    }
-
-    @media (max-width:361px) {
-      background-position: -30px 0;
-    }  
   }
 
   &__item-img {
@@ -107,93 +72,45 @@
     &--first {
     }
     &--second {
-      margin-left: 60px;
     }
     &--third {
-      margin-left: -30px;
     }
   }
 
   &__item-title {
-    margin-top: -10px;
- 
+    padding-bottom: 30px;
     font-family: $font-family-bold;
-    font-size: 36px;
+    font-size: 25px;
     color: $violet;
     line-height: 1.5;
 
-    &--first {
-      padding-left: 140px;
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+      padding-bottom: 60px;
+      font-size: 36px;
+    }
 
-      @media (max-width:769px) {
-        padding-left: 40px;
-      }
-    
-      @media (max-width:361px) {
-        
-      }
+    &--first {
     }
     &--second {
-      padding-left: 60px;
-
-      @media (max-width:769px) {
-        padding-left: 40px;
-      }
-    
-      @media (max-width:361px) {
-        
-      }
-    }
-    
+    } 
     &--third {
-
-      @media (max-width:769px) {
-        padding-left: 40px;
-      }
-    
-      @media (max-width:361px) {
-        
-      }
     }
   }
 
   &__item-descr {
-    padding-top: 20px;
     font-family: $font-family;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 1.7;
 
-    &--first {
-      padding-left: 140px;
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+      font-size: 20px;
+    }
 
-      @media (max-width:769px) {
-        padding-left: 40px;
-      }
-    
-      @media (max-width:361px) {
-        
-      }
+    &--first {
     }
     &--second {
-      padding-left: 60px;
-
-      @media (max-width:769px) {
-        padding-left: 40px;
-      }
-    
-      @media (max-width:361px) {
-        
-      }
     }
-
     &--third {
-      @media (max-width:769px) {
-        padding-left: 40px;
-      }
-    
-      @media (max-width:361px) {
-        
-      }
     }
   }
 }

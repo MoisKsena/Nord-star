@@ -5,35 +5,48 @@
   &__inner {
     display: none;
      
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+      display: block;
+    }
   }
   &__title {
-    @extend .col-sm-6;
-    display: none;
     font-family: $font-family-bold;
     font-size: $font-size-h1-mobile;
- 
+    padding-bottom: 54px;
   }
   &__descr {
-    @extend .col-sm-6;
     font-family: $font-family;
-    font-size: 20px;
+    font-size: $font-size-xs;
     line-height: 2;
   }
 
   &__mobil {
     
-   
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+      padding-left: 40px;
+    }
+
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+      display: none;
+    }
   }
 
   &__mobil-title {
     font-family: $font-family-bold;
     font-size: 30px;
-    
+
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+      font-size: 64px;
+    }
   }
 
   &__mobil-descr {
     font-family: $font-family;
     font-size: 12px;
     line-height: 1.8;
+
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+      font-size: 24px;
+    }
   }
 }
