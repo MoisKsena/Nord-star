@@ -2268,20 +2268,9 @@ pre {
         font-size: 20px; } }
 
 .about {
-  margin-top: 123px;
-  margin-bottom: 220px; }
-  @media (max-width: 769px) {
-    .about {
-      margin-top: 237px; } }
+  padding: 0 20px; }
   .about__main-text {
     display: none; }
-    @media (max-width: 769px) {
-      .about__main-text {
-        display: block;
-        padding-left: 40px; } }
-    @media (max-width: 361px) {
-      .about__main-text {
-        display: block; } }
     .about__main-text--title {
       width: 60%; }
     .about__main-text--explan {
@@ -2296,38 +2285,22 @@ pre {
         -ms-flex-direction: row;
             flex-direction: row; }
   .about__main-column {
-    width: 50%;
-    padding-top: 720px;
-    padding-left: 22%; }
-    @media (max-width: 769px) {
-      .about__main-column {
-        width: 70%;
-        padding-left: 40px;
-        padding-top: 123px; } }
-  .about__main-item {
-    max-width: 430px;
-    padding-bottom: 60px; }
-    .about__main-item span {
-      font-family: Ubuntu-Regular, sans-serif;
-      font-weight: 700;
-      font-size: 72px;
-      color: #4B2DA0; }
-    .about__main-item--descr {
-      font-family: Ubuntu-Regular, sans-serif;
-      font-weight: 500;
-      font-size: 48px;
-      line-height: 1.3; }
-    .about__main-item--sign {
-      font-family: Ubuntu-Regular, sans-serif;
-      font-size: 20px; }
-  .about__main-image {
     width: 50%; }
-    @media (max-width: 769px) {
-      .about__main-image {
-        display: none; } }
-    @media (max-width: 361px) {
-      .about__main-image {
-        display: none; } }
+  .about__main-item span {
+    font-family: Ubuntu-Regular, sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+    color: #4B2DA0; }
+  .about__main-item--descr {
+    font-family: Ubuntu-Regular, sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 1.3; }
+  .about__main-item--sign {
+    font-family: Ubuntu-Regular, sans-serif;
+    font-size: 20px; }
+  .about__main-image {
+    display: none; }
 
 @media (max-width: 769px) {
   .tariff__main {

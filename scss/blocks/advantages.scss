@@ -68,13 +68,6 @@
     display: flex;
     height: 500px;
     margin: 0 auto;
-
-    &--first {
-    }
-    &--second {
-    }
-    &--third {
-    }
   }
 
   &__item-title {
@@ -88,13 +81,6 @@
       padding-bottom: 60px;
       font-size: 36px;
     }
-
-    &--first {
-    }
-    &--second {
-    } 
-    &--third {
-    }
   }
 
   &__item-descr {
@@ -104,13 +90,6 @@
 
     @media (min-width: map-get($grid-breakpoints, sm)) {
       font-size: 20px;
-    }
-
-    &--first {
-    }
-    &--second {
-    }
-    &--third {
     }
   }
 }
