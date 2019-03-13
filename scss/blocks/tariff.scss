@@ -1,203 +1,122 @@
 .tariff {
+  margin-top: 240px;
+  padding: 0 20px;
 
   &__main {
 
-    @media (max-width:769px) {
-      padding-left: 40px;
-    }
-  
-    @media (max-width:361px) {
-      
-    }
    
   }
 
   &__main-title {
     font-family: $font-family-bold;
-    font-size: 64px;
+    font-size: 30px;
   }
+
   &__main-descr {
     padding-top: 20px;
     padding-bottom: 93px;
     opacity: 0.52;
     font-family: $font-family;
-    font-size: $font-size;
+    font-size: 14px;
 
-    @media (max-width:769px) {
-      opacity: 1;
-      padding-bottom: 179px;
-    }
-  
-    @media (max-width:361px) {
-      
-    }
   }
 
   &__table {
-    display: flex;
-    padding-top: 20px;
-    justify-content: space-between;
+ 
 
-    @media (max-width:769px) {
-      flex-direction: column;
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
     }
-  
-    @media (max-width:361px) {
+  }
+
+  &__item:not(:last-child){
+
+  }
+
+  &__item:nth-child(1) {
+    width: 100%;
+    min-height: 600px;
+    background-image: url(../img/tariff1.svg);
+    background-repeat: no-repeat;
+    background-size: 130%;
+    background-position-x: 70%;
+    //background-position-y: -10%;
+
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+      
+      background-size: 100%;
+    }
+
+    @media (min-width: map-get($grid-breakpoints, lg)) {
       
     }
   }
 
-  &__item {
+  &__item:nth-child(2) { 
+    width: 100%; 
+    min-height: 600px;
+    background-image: url(../img/tariff2.svg);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position-x: 50%;
 
-    &--first {
-      width: 33%;
-      height: 680px;
-      margin-left: 0;
-      margin-bottom: 0;
-      background-image: url(../img/tariff1.svg);
-      background-repeat: no-repeat;
-      background-position: -30px -20px;
-      background-size: 110%;
-
-      @media (max-width:769px) {
-        width: 100%;
-        height: 690px;
-        margin-left: 90px;
-        margin-bottom: 180px;
-        background-size: 93%;
-        background-position: -60px -20px;
-      }
-    
-      @media (max-width:361px) {
-        
-      }
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+      
     }
+  }
 
-    &--second { 
-      width: 33%; 
-      height: 680px;
-      margin-left: 0;
-      margin-bottom: 0;
-      background-image: url(../img/tariff2.svg);
-      background-repeat: no-repeat;
-      background-position: 100px 10px;
-      background-size: 75%;
+  &__item:nth-child(3) {
+    width: 100%;
+    min-height: 600px;
+    background-image: url(../img/tariff3.svg);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position-x: 15%;
 
-      @media (max-width:769px) {
-        width: 100%;
-        background-size: 65%;
-        margin-left: 60px;
-        margin-bottom: 180px;
-      }
-    
-      @media (max-width:361px) {
-        
-      }
-    }
-
-    &--third {
-      width: 33%;
-      height: 680px;
-      margin-left: 0;
-      background-image: url(../img/tariff3.svg);
-      background-repeat: no-repeat;
-      background-position: -45px -30px;
-      background-size: 100%;
-
-      @media (max-width:769px) {
-        width: 100%;
-        background-size: 81%;
-        margin-left: 140px;
-      }
-    
-      @media (max-width:361px) {
-        
-      }
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+      
     }
   }
 
   &__item-title {
     padding-top: 20px;
-    padding-bottom: 50px;
-    
-    span{
-      font-family: $font-family-bold;
-      font-size: 72px;
-      color: $black;
-    }
-
+    padding-left: 40px;
+    padding-bottom: 30px;
     font-family: $font-family-bold;
-    font-size: 36px;
-    color: $white;
-
-  &--first {
-    padding-left: 120px;
-
-    @media (max-width:769px) {
-      padding-left: 110px;
-    }
-  
-    @media (max-width:361px) {
-      
-    }
+    font-size: 20px;
+    color: $white; 
   }
 
-  &--second {
-    padding-left: 110px;
+  &__item-title span {
+    font-family: $font-family-bold;
+    font-size: 40px;
+    color: $black;
   }
 
-  &--third {
-    padding-left: 35px;
-
-    @media (max-width:769px) {
-      padding-left: 55px;
-    }
-  
-    @media (max-width:361px) {
-      
-    }
-  }
+  &__item-content {
+    padding-left: 30%;
   }
 
   &__item-descr {
 
     &--text {
       font-family: $font-family;
-      font-size: 20px;
+      font-size: 12px;
       color: $white;
     }
 
     &--sign {
+      padding-bottom: 15px;
       font-family: $font-family-bold;
-      font-size: 24px;
+      font-size: 14px;
       font-weight: 700;
       color: $white;
       line-height: 1.1;
     }
-
-    &--first {
-      padding-left: 200px;
-    }
-
-    &--second {
-      padding-left: 190px;
-    }
-
-    &--third {
-      padding-left: 130px;
-    }
   }
 
   &__item-addition {
-
-    &--first {
-      padding-left: 190px;
-      padding-top: 40px;
-    }
-
-    &--second {
-      padding-left: 130px;
-      padding-top: 40px;
-    }
   }
 }

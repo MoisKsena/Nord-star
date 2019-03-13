@@ -28,10 +28,11 @@
   &__main {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
   }
 
   &__main-column {
-
+    flex-direction: column;
   }
 
   &__main-item {
@@ -75,7 +76,7 @@
 
     @media (min-width: map-get($grid-breakpoints, lgx)) {
       display: flex;
-      width: 50%;
+      flex-direction: column;
     }
  
   }

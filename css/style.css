@@ -2290,7 +2290,14 @@ pre {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row; }
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; }
+  .about__main-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
   .about__main-item {
     margin: 0;
     padding-top: 120px; }
@@ -2323,141 +2330,82 @@ pre {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        width: 50%; } }
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
 
-@media (max-width: 769px) {
-  .tariff__main {
-    padding-left: 40px; } }
-
-.tariff__main-title {
-  font-family: Ubuntu-Bold, sans-serif;
-  font-size: 64px; }
-
-.tariff__main-descr {
-  padding-top: 20px;
-  padding-bottom: 93px;
-  opacity: 0.52;
-  font-family: Ubuntu-Regular, sans-serif;
-  font-size: 20px; }
-  @media (max-width: 769px) {
-    .tariff__main-descr {
-      opacity: 1;
-      padding-bottom: 179px; } }
-
-.tariff__table {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 20px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-  @media (max-width: 769px) {
+.tariff {
+  margin-top: 240px;
+  padding: 0 20px; }
+  .tariff__main-title {
+    font-family: Ubuntu-Bold, sans-serif;
+    font-size: 30px; }
+  .tariff__main-descr {
+    padding-top: 20px;
+    padding-bottom: 93px;
+    opacity: 0.52;
+    font-family: Ubuntu-Regular, sans-serif;
+    font-size: 14px; }
+  @media (min-width: 1200px) {
     .tariff__table {
-      -webkit-box-orient: vertical;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; } }
-
-.tariff__item--first {
-  width: 33%;
-  height: 680px;
-  margin-left: 0;
-  margin-bottom: 0;
-  background-image: url(../img/tariff1.svg);
-  background-repeat: no-repeat;
-  background-position: -30px -20px;
-  background-size: 110%; }
-  @media (max-width: 769px) {
-    .tariff__item--first {
-      width: 100%;
-      height: 690px;
-      margin-left: 90px;
-      margin-bottom: 180px;
-      background-size: 93%;
-      background-position: -60px -20px; } }
-
-.tariff__item--second {
-  width: 33%;
-  height: 680px;
-  margin-left: 0;
-  margin-bottom: 0;
-  background-image: url(../img/tariff2.svg);
-  background-repeat: no-repeat;
-  background-position: 100px 10px;
-  background-size: 75%; }
-  @media (max-width: 769px) {
-    .tariff__item--second {
-      width: 100%;
-      background-size: 65%;
-      margin-left: 60px;
-      margin-bottom: 180px; } }
-
-.tariff__item--third {
-  width: 33%;
-  height: 680px;
-  margin-left: 0;
-  background-image: url(../img/tariff3.svg);
-  background-repeat: no-repeat;
-  background-position: -45px -30px;
-  background-size: 100%; }
-  @media (max-width: 769px) {
-    .tariff__item--third {
-      width: 100%;
-      background-size: 81%;
-      margin-left: 140px; } }
-
-.tariff__item-title {
-  padding-top: 20px;
-  padding-bottom: 50px;
-  font-family: Ubuntu-Bold, sans-serif;
-  font-size: 36px;
-  color: #ffffff; }
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; } }
+  .tariff__item:nth-child(1) {
+    width: 100%;
+    min-height: 600px;
+    background-image: url(../img/tariff1.svg);
+    background-repeat: no-repeat;
+    background-size: 130%;
+    background-position-x: 70%; }
+    @media (min-width: 768px) {
+      .tariff__item:nth-child(1) {
+        background-size: 100%; } }
+  .tariff__item:nth-child(2) {
+    width: 100%;
+    min-height: 600px;
+    background-image: url(../img/tariff2.svg);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position-x: 50%; }
+  .tariff__item:nth-child(3) {
+    width: 100%;
+    min-height: 600px;
+    background-image: url(../img/tariff3.svg);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position-x: 15%; }
+  .tariff__item-title {
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+    font-family: Ubuntu-Bold, sans-serif;
+    font-size: 20px;
+    color: #ffffff; }
   .tariff__item-title span {
     font-family: Ubuntu-Bold, sans-serif;
-    font-size: 72px;
+    font-size: 40px;
     color: #232323; }
-  .tariff__item-title--first {
-    padding-left: 120px; }
-    @media (max-width: 769px) {
-      .tariff__item-title--first {
-        padding-left: 110px; } }
-  .tariff__item-title--second {
-    padding-left: 110px; }
-  .tariff__item-title--third {
-    padding-left: 35px; }
-    @media (max-width: 769px) {
-      .tariff__item-title--third {
-        padding-left: 55px; } }
-
-.tariff__item-descr--text {
-  font-family: Ubuntu-Regular, sans-serif;
-  font-size: 20px;
-  color: #ffffff; }
-
-.tariff__item-descr--sign {
-  font-family: Ubuntu-Bold, sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: #ffffff;
-  line-height: 1.1; }
-
-.tariff__item-descr--first {
-  padding-left: 200px; }
-
-.tariff__item-descr--second {
-  padding-left: 190px; }
-
-.tariff__item-descr--third {
-  padding-left: 130px; }
-
-.tariff__item-addition--first {
-  padding-left: 190px;
-  padding-top: 40px; }
-
-.tariff__item-addition--second {
-  padding-left: 130px;
-  padding-top: 40px; }
+  .tariff__item-content {
+    padding-left: 30%; }
+  .tariff__item-descr--text {
+    font-family: Ubuntu-Regular, sans-serif;
+    font-size: 12px;
+    color: #ffffff; }
+  .tariff__item-descr--sign {
+    padding-bottom: 15px;
+    font-family: Ubuntu-Bold, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.1; }
 
 .feedback {
   display: -webkit-box;
