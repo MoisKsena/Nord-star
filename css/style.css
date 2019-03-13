@@ -2269,7 +2269,7 @@ pre {
 
 .about {
   padding: 0 20px; }
-  @media (min-width: 1440px) {
+  @media (min-width: 1200px) {
     .about__main-text {
       display: none; } }
   .about__main-text--title {
@@ -2294,10 +2294,12 @@ pre {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap; }
   .about__main-column {
+    width: 50%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    margin-left: 15%; }
   .about__main-item {
     margin: 0;
     padding-top: 120px; }
@@ -2325,15 +2327,12 @@ pre {
           font-size: 20px; } }
   .about__main-image {
     display: none; }
-    @media (min-width: 1440px) {
+    @media (min-width: 1200px) {
       .about__main-image {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column; } }
+        width: 50%; } }
 
 .tariff {
   margin-top: 240px;
@@ -2341,12 +2340,17 @@ pre {
   .tariff__main-title {
     font-family: Ubuntu-Bold, sans-serif;
     font-size: 30px; }
+    @media (min-width: 768px) {
+      .tariff__main-title {
+        font-size: 64px; } }
   .tariff__main-descr {
     padding-top: 20px;
     padding-bottom: 93px;
-    opacity: 0.52;
     font-family: Ubuntu-Regular, sans-serif;
     font-size: 14px; }
+    @media (min-width: 768px) {
+      .tariff__main-descr {
+        font-size: 24px; } }
   @media (min-width: 1200px) {
     .tariff__table {
       display: -webkit-box;
@@ -2358,6 +2362,9 @@ pre {
               flex-direction: row;
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap; } }
+  @media (min-width: 768px) {
+    .tariff__item {
+      margin-bottom: 170px; } }
   .tariff__item:nth-child(1) {
     width: 100%;
     min-height: 600px;
@@ -2367,7 +2374,8 @@ pre {
     background-position-x: 70%; }
     @media (min-width: 768px) {
       .tariff__item:nth-child(1) {
-        background-size: 100%; } }
+        min-height: 820px;
+        background-size: 110%; } }
   .tariff__item:nth-child(2) {
     width: 100%;
     min-height: 600px;
@@ -2375,6 +2383,10 @@ pre {
     background-repeat: no-repeat;
     background-size: 90%;
     background-position-x: 50%; }
+    @media (min-width: 768px) {
+      .tariff__item:nth-child(2) {
+        min-height: 820px;
+        background-size: 80%; } }
   .tariff__item:nth-child(3) {
     width: 100%;
     min-height: 600px;
@@ -2382,6 +2394,10 @@ pre {
     background-repeat: no-repeat;
     background-size: 110%;
     background-position-x: 15%; }
+    @media (min-width: 768px) {
+      .tariff__item:nth-child(3) {
+        min-height: 900px;
+        background-size: 100%; } }
   .tariff__item-title {
     padding-top: 20px;
     padding-left: 40px;
@@ -2389,16 +2405,28 @@ pre {
     font-family: Ubuntu-Bold, sans-serif;
     font-size: 20px;
     color: #ffffff; }
+    @media (min-width: 768px) {
+      .tariff__item-title {
+        font-size: 36px;
+        padding-top: 80px;
+        padding-left: 150px;
+        padding-bottom: 76px; } }
   .tariff__item-title span {
     font-family: Ubuntu-Bold, sans-serif;
     font-size: 40px;
     color: #232323; }
+    @media (min-width: 768px) {
+      .tariff__item-title span {
+        font-size: 72px; } }
   .tariff__item-content {
     padding-left: 30%; }
   .tariff__item-descr--text {
     font-family: Ubuntu-Regular, sans-serif;
     font-size: 12px;
     color: #ffffff; }
+    @media (min-width: 768px) {
+      .tariff__item-descr--text {
+        font-size: 20px; } }
   .tariff__item-descr--sign {
     padding-bottom: 15px;
     font-family: Ubuntu-Bold, sans-serif;
@@ -2406,6 +2434,12 @@ pre {
     font-weight: 700;
     color: #ffffff;
     line-height: 1.1; }
+    @media (min-width: 768px) {
+      .tariff__item-descr--sign {
+        font-size: 24px; } }
+  @media (min-width: 768px) {
+    .tariff__item-addition {
+      font-size: 20px; } }
 
 .feedback {
   display: -webkit-box;

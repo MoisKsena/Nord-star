@@ -10,15 +10,21 @@
   &__main-title {
     font-family: $font-family-bold;
     font-size: 30px;
+
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+      font-size: $font-size-h1-mobile;
+    }
   }
 
   &__main-descr {
     padding-top: 20px;
     padding-bottom: 93px;
-    opacity: 0.52;
     font-family: $font-family;
     font-size: 14px;
 
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+      font-size: $font-size-xs;
+    }
   }
 
   &__table {
@@ -31,7 +37,11 @@
     }
   }
 
-  &__item:not(:last-child){
+  &__item{
+
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+      margin-bottom: 170px;
+    }
 
   }
 
@@ -42,11 +52,10 @@
     background-repeat: no-repeat;
     background-size: 130%;
     background-position-x: 70%;
-    //background-position-y: -10%;
 
     @media (min-width: map-get($grid-breakpoints, sm)) {
-      
-      background-size: 100%;
+      min-height: 820px;
+      background-size: 110%;
     }
 
     @media (min-width: map-get($grid-breakpoints, lg)) {
@@ -62,6 +71,11 @@
     background-size: 90%;
     background-position-x: 50%;
 
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+      min-height: 820px;
+      background-size: 80%;
+    }
+
     @media (min-width: map-get($grid-breakpoints, lg)) {
       
     }
@@ -75,6 +89,11 @@
     background-size: 110%;
     background-position-x: 15%;
 
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+      min-height: 900px;
+      background-size: 100%;
+    }
+
     @media (min-width: map-get($grid-breakpoints, lg)) {
       
     }
@@ -87,12 +106,23 @@
     font-family: $font-family-bold;
     font-size: 20px;
     color: $white; 
+
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+      font-size: 36px;
+      padding-top: 80px;
+      padding-left: 150px;
+      padding-bottom: 76px;
+    }
   }
 
   &__item-title span {
     font-family: $font-family-bold;
     font-size: 40px;
     color: $black;
+
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+      font-size: $font-size-h1;
+    }
   }
 
   &__item-content {
@@ -105,6 +135,10 @@
       font-family: $font-family;
       font-size: 12px;
       color: $white;
+
+      @media (min-width: map-get($grid-breakpoints, sm)) {
+        font-size: $font-size;
+      }
     }
 
     &--sign {
@@ -114,9 +148,17 @@
       font-weight: 700;
       color: $white;
       line-height: 1.1;
+
+      @media (min-width: map-get($grid-breakpoints, sm)) {
+        font-size: $font-size-xs;
+      }
     }
   }
 
   &__item-addition {
+
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+      font-size: $font-size;
+    }
   }
 }

@@ -3,7 +3,7 @@
   padding: 0 20px;
 
   &__main-text {
-    @media (min-width: map-get($grid-breakpoints, lgx)) {
+    @media (min-width: map-get($grid-breakpoints, lg)) {
       display: none;
     }
 
@@ -32,7 +32,9 @@
   }
 
   &__main-column {
+    width: 50%;
     flex-direction: column;
+    margin-left: 15%;
   }
 
   &__main-item {
@@ -74,9 +76,9 @@
   &__main-image {
     display: none;
 
-    @media (min-width: map-get($grid-breakpoints, lgx)) {
+    @media (min-width: map-get($grid-breakpoints, lg)) {
       display: flex;
-      flex-direction: column;
+      width: 50%;
     }
  
   }
