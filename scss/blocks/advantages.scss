@@ -4,11 +4,11 @@
 
   &__title {
     @extend .row;
-    padding-left: 20px;
     font-size: 30px;
 
     @media (min-width: map-get($grid-breakpoints, sm)) {
       width: 90%;
+      padding-left: 20px;
       font-size: 64px;
     }
 

@@ -2185,7 +2185,7 @@ pre {
         font-size: 64px; } }
   .resume__mobil-descr {
     font-family: Ubuntu-Regular, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.8; }
     @media (min-width: 768px) {
       .resume__mobil-descr {
@@ -2195,11 +2195,11 @@ pre {
   padding: 0px 20px;
   margin-top: 225px; }
   .advantages__title {
-    padding-left: 20px;
     font-size: 30px; }
     @media (min-width: 768px) {
       .advantages__title {
         width: 90%;
+        padding-left: 20px;
         font-size: 64px; } }
     @media (min-width: 1200px) {
       .advantages__title {
@@ -2269,13 +2269,20 @@ pre {
 
 .about {
   padding: 0 20px; }
-  .about__main-text {
-    display: none; }
-    .about__main-text--title {
-      width: 60%; }
-    .about__main-text--explan {
-      font-family: Ubuntu-Regular, sans-serif;
-      font-size: 34px; }
+  @media (min-width: 1440px) {
+    .about__main-text {
+      display: none; } }
+  .about__main-text--title {
+    font-size: 30px; }
+    @media (min-width: 768px) {
+      .about__main-text--title {
+        font-size: 64px; } }
+  .about__main-text--explan {
+    font-family: Ubuntu-Regular, sans-serif;
+    font-size: 14px; }
+    @media (min-width: 768px) {
+      .about__main-text--explan {
+        font-size: 34px; } }
   .about__main {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2284,23 +2291,39 @@ pre {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row; }
-  .about__main-column {
-    width: 50%; }
-  .about__main-item span {
-    font-family: Ubuntu-Regular, sans-serif;
-    font-weight: 700;
-    font-size: 72px;
-    color: #4B2DA0; }
-  .about__main-item--descr {
-    font-family: Ubuntu-Regular, sans-serif;
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 1.3; }
-  .about__main-item--sign {
-    font-family: Ubuntu-Regular, sans-serif;
-    font-size: 20px; }
+  .about__main-item {
+    margin: 0;
+    padding-top: 120px; }
+    .about__main-item span {
+      font-family: Ubuntu-Regular, sans-serif;
+      font-weight: 700;
+      font-size: 30px;
+      color: #4B2DA0; }
+      @media (min-width: 768px) {
+        .about__main-item span {
+          font-size: 72px; } }
+    .about__main-item--descr {
+      font-family: Ubuntu-Regular, sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1.3; }
+      @media (min-width: 768px) {
+        .about__main-item--descr {
+          font-size: 48px; } }
+    .about__main-item--sign {
+      font-family: Ubuntu-Regular, sans-serif;
+      font-size: 12px; }
+      @media (min-width: 768px) {
+        .about__main-item--sign {
+          font-size: 20px; } }
   .about__main-image {
     display: none; }
+    @media (min-width: 1440px) {
+      .about__main-image {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 50%; } }
 
 @media (max-width: 769px) {
   .tariff__main {

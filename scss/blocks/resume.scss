@@ -42,7 +42,7 @@
 
   &__mobil-descr {
     font-family: $font-family;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.8;
 
     @media (min-width: map-get($grid-breakpoints, sm)) {
