@@ -3,8 +3,7 @@
   padding: 0 20px;
 
   &__main {
-
-   
+    padding: 0 20px;
   }
 
   &__main-title {
@@ -29,7 +28,6 @@
 
   &__table {
  
-
     @media (min-width: map-get($grid-breakpoints, lg)) {
       display: flex;
       flex-direction: row;
@@ -58,8 +56,16 @@
       background-size: 110%;
     }
 
+    @media (min-width: map-get($grid-breakpoints, md)) {
+      min-height: 900px;
+      background-size: 90%;
+      background-position-x: 0;
+    }
+
     @media (min-width: map-get($grid-breakpoints, lg)) {
-      
+      background-size: 125%;
+      background-position-x: 65%;
+      background-position-y: -2%;
     }
   }
 
@@ -76,8 +82,15 @@
       background-size: 80%;
     }
 
+    @media (min-width: map-get($grid-breakpoints, md)) {
+      min-height: 900px;
+      background-size: 60%;
+      background-position-x: 30%;
+    }
+
     @media (min-width: map-get($grid-breakpoints, lg)) {
-      
+      background-size: 90%;
+      background-position-y: 5%;
     }
   }
 
@@ -94,8 +107,14 @@
       background-size: 100%;
     }
 
+    @media (min-width: map-get($grid-breakpoints, md)) {
+      min-height: 900px;
+      background-size: 80%;
+      background-position-x: 15%;
+    }
+
     @media (min-width: map-get($grid-breakpoints, lg)) {
-      
+      background-size: 110%;
     }
   }
 
@@ -112,6 +131,16 @@
       padding-top: 80px;
       padding-left: 150px;
       padding-bottom: 76px;
+    }
+
+    @media (min-width: map-get($grid-breakpoints, md)) {
+      padding-left: 250px;
+    }
+
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+      padding-left: 80px;
+      padding-top: 0;
+      padding-bottom: 0;
     }
   }
 
