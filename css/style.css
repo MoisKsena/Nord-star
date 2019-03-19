@@ -2374,6 +2374,9 @@ pre {
   @media (min-width: 768px) {
     .tariff__item {
       margin-bottom: 170px; } }
+  @media (min-width: 1200px) {
+    .tariff__item {
+      margin-bottom: 0; } }
   .tariff__item:nth-child(1) {
     width: 100%;
     min-height: 600px;
@@ -2486,100 +2489,60 @@ pre {
       font-size: 20px; } }
 
 .feedback {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 150px;
-  margin-bottom: 100px;
-  background-image: url("../img/feedback.svg");
-  background-repeat: no-repeat;
-  background-size: 35%;
-  background-position: 80% 70%; }
-  @media (max-width: 769px) {
+  display: block;
+  padding: 0 20px; }
+  @media (min-width: 1200px) {
     .feedback {
-      display: block;
-      background-size: 0%; } }
-  @media (max-width: 361px) {
+      min-height: 900px;
+      background-image: url("../img/feedback.svg");
+      background-repeat: no-repeat;
+      background-size: 50%;
+      background-position: 90% 1%; } }
+  @media (min-width: 1920px) {
     .feedback {
-      display: block;
-      background-size: 0%; } }
+      min-height: 1100px; } }
   .feedback__reviews {
-    margin-bottom: 100px; }
-    @media (max-width: 769px) {
-      .feedback__reviews {
-        padding-left: 40px; } }
-    @media (max-width: 361px) {
-      .feedback__reviews {
-        padding-left: 40px; } }
+    margin-bottom: 100px;
+    padding: 0 20px; }
   .feedback__reviews-title {
-    margin-bottom: 226px;
+    padding-bottom: 20px;
     font-family: Ubuntu-Bold, sans-serif;
-    font-size: 64px; }
-    @media (max-width: 769px) {
+    font-size: 30px; }
+    @media (min-width: 1200px) {
       .feedback__reviews-title {
-        margin-bottom: 0; } }
-    @media (max-width: 361px) {
-      .feedback__reviews-title {
-        margin-bottom: 0; } }
+        font-size: 64px; } }
   .feedback__reviews-sign {
-    display: none; }
-    @media (max-width: 769px) {
+    display: block;
+    font-family: Ubuntu-Regular, sans-serif;
+    font-size: 20px; }
+    @media (min-width: 1200px) {
       .feedback__reviews-sign {
-        display: block;
-        padding-top: 72px;
-        font-family: Ubuntu-Regular, sans-serif;
-        font-size: 20px; } }
-    @media (max-width: 361px) {
-      .feedback__reviews-sign {
-        display: block;
-        padding-top: 72px;
-        font-family: Ubuntu-Regular, sans-serif;
-        font-size: 20px; } }
+        display: none; } }
   .feedback__text {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    @media (max-width: 769px) {
-      .feedback__text {
-        margin-top: 170px;
-        overflow-x: scroll; } }
-    @media (max-width: 361px) {
-      .feedback__text {
-        overflow-x: auto; } }
+    display: block;
+    overflow-x: auto; }
   .feedback__item {
-    padding-top: 8px; }
-    @media (max-width: 769px) {
-      .feedback__item {
-        padding-top: 0; } }
-    @media (max-width: 361px) {
-      .feedback__item {
-        padding-top: 0; } }
-  .feedback__item:nth-child(2) {
-    display: none; }
-    @media (max-width: 769px) {
-      .feedback__item:nth-child(2) {
-        display: block;
-        margin-left: 116px; } }
-    @media (max-width: 361px) {
-      .feedback__item:nth-child(2) {
-        display: block; } }
-  .feedback__item:nth-child(3) {
-    display: none; }
-    @media (max-width: 769px) {
-      .feedback__item:nth-child(3) {
-        display: block;
-        margin-left: 116px; } }
-    @media (max-width: 361px) {
-      .feedback__item:nth-child(3) {
-        display: block; } }
+    display: block; }
+  @media (min-width: 1200px) {
+    .feedback__item:nth-child(2) {
+      display: none; } }
+  @media (min-width: 1200px) {
+    .feedback__item:nth-child(3) {
+      display: none; } }
   .feedback__item-title {
     font-family: Ubuntu-Bold, sans-serif;
-    font-size: 36px; }
+    font-size: 30px; }
+    @media (min-width: 1200px) {
+      .feedback__item-title {
+        font-size: 36px; } }
   .feedback__item-descr {
     font-family: Ubuntu-Bold, sans-serif;
     font-size: 20px;
     font-weight: 700;
     line-height: 2; }
+    @media (min-width: 1200px) {
+      .feedback__item-descr {
+        font-size: 20px; } }
   .feedback__item-text {
     max-width: 480px;
     padding-top: 42px;

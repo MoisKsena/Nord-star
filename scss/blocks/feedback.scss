@@ -1,122 +1,92 @@
 .feedback {
   @extend .row;
-  display: flex;
-  margin-top: 150px;
-  margin-bottom: 100px;
-  background-image: url('../img/feedback.svg');
-  background-repeat: no-repeat;
-  background-size: 35%;
-  background-position: 80% 70%;
+  display: block;
+  padding: 0 20px;
 
-  @media (max-width:769px) {
-    display: block;
-    background-size: 0%;
+  @media (min-width: map-get($grid-breakpoints, lg)) {
+    min-height: 900px;
+    background-image: url('../img/feedback.svg');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 90% 1%;
   }
 
-  @media (max-width:361px) {
-    display: block;
-    background-size: 0%;
+  @media (min-width: map-get($grid-breakpoints, xl)) {
+    min-height: 1100px;
   }
 
   &__reviews {  
     margin-bottom: 100px;
+    padding: 0 20px;
 
-    @media (max-width:769px) {
-      padding-left: 40px;
-    }
-  
-    @media (max-width:361px) {
-      padding-left: 40px;
-    }
+    
   }
 
   &__reviews-title {
-    margin-bottom: 226px;
+    padding-bottom: 20px;
     font-family: $font-family-bold;
-    font-size: 64px;
+    font-size: 30px;
 
-    @media (max-width:769px) {
-      margin-bottom: 0;
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+
     }
-  
-    @media (max-width:361px) {
-      margin-bottom: 0;
+
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+      font-size: 64px;
     }
   }
 
   &__reviews-sign {
-    display: none;
+    display: block;
+    font-family: $font-family;
+    font-size: 20px;
 
-    @media (max-width:769px) {
-      display: block;
-      padding-top: 72px;
-      font-family: $font-family;
-      font-size: 20px;
-    }
-  
-    @media (max-width:361px) {
-      display: block;
-      padding-top: 72px;
-      font-family: $font-family;
-      font-size: 20px;
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+      display: none;
     }
   }
 
   &__text {
-    display: flex;
+
+    display: block;
+    overflow-x: auto;
     
-    @media (max-width:769px) {
-      margin-top: 170px;
-      overflow-x: scroll;
-    }
-  
-    @media (max-width:361px) {
-      overflow-x: auto;
-    }
+    // @media (min-width: map-get($grid-breakpoints, sm)) {
+      
+    //   margin-top: 170px;
+    //   overflow-x: scroll;
+    // }
+
+    // @media (min-width: map-get($grid-breakpoints, lg)) {
+     
+    // }
   }
 
   &__item {
-    padding-top: 8px;
-
-    @media (max-width:769px) {
-      padding-top: 0;
-    }
-  
-    @media (max-width:361px) {
-      padding-top: 0;
-    }
+    display: block;
   }
 
   &__item:nth-child(2) {
-    display: none;
 
-    @media (max-width:769px) {
-      display: block;
-      margin-left: 116px;
-    }
-  
-    @media (max-width:361px) {
-      display: block;
-      
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+      display: none;
     }
   }
 
   &__item:nth-child(3) {
-    display: none;
 
-    @media (max-width:769px) {
-      display: block;
-      margin-left: 116px;
-    }
-  
-    @media (max-width:361px) {
-      display: block;
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+      display: none;
     }
   }
 
   &__item-title {
     font-family: $font-family-bold;
-    font-size: 36px;
+    font-size: 30px;
+
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+      font-size: 36px;
+    }
   }
 
   &__item-descr {
@@ -124,6 +94,10 @@
     font-size: 20px;
     font-weight: 700;
     line-height: 2;
+
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+      font-size: 20px;
+    }
   }
 
   &__item-text {
