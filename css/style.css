@@ -2719,8 +2719,8 @@ pre {
   background-image: url("../img/orderform.svg");
   background-repeat: no-repeat;
   background-size: 160%;
-  background-position-x: 40%;
-  background-position-y: 200%; }
+  background-position-x: 50%;
+  background-position-y: 100%; }
   @media (min-width: 768px) {
     .footer {
       margin-top: -500px;
