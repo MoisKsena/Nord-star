@@ -1,86 +1,152 @@
 .orderform {
   @extend .row;
+  padding: 0 20px;
 
   &__title {
-    @extend .col-sm-7;
-    margin-top: 200px;
-    margin-bottom: 143px;
+    //@extend .col-sm-7;
+
+    padding: 0 20px;
     font-family: $font-family-bold;
-    font-size: $font-size-h1;
+    font-size: 30px;
+
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+      margin-bottom: 166px;
+      font-size: $font-size-h1;
+    }
   }
 
   &__form {
-    @extend .col-sm-12;
-    height: 546px;
-    align-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-top: 60px;
-    margin-bottom: 110px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+      margin-bottom: 110px;
+    }
+
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
   }
 
   &__form-input {
+    width: 95%;
+    margin-bottom: 100px;
     border: none;
     background-color: transparent;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     color: $black;
     opacity: 0.5;
     font-family: $font-family;
-    font-size: 36px;
+    font-size: 14px;
+
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+      font-size: 36px;
+    }
   }
 
   &__form-input:nth-child(1){
-    @extend .col-sm-5;
-    margin-right: 127px;
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+      width: 43.3%;
+      margin-right: 127px;
+    }
   }
 
   &__form-input:nth-child(2){
-    @extend .col-sm-5;  
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+      width: 43.3%;
+    }
   }
 
   &__form-input:nth-child(3){
-    @extend .col-sm-5;
-    margin-top: 147px;
-    padding-top: 30px;
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+      width: 43.3%;
+    }
   }
 
   &__form-input:nth-child(4){
-    @extend .col-sm-11;
-    margin-top: 147px;
-    padding-top: 50px;
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+      width: 100%;
+    }
   }
 
   &__button {
-    @extend .col-sm-12;
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+      padding: 0 20px;
+      align-items: normal;
+    }
   }
 
   &__button-button {
-    @extend .col-sm-4;
-    height: 128px;
-    background: #FFFFFF;
+    width: 90%;
+    height: 60px;
+    background: #6A48DC;
     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
-    border: none;
-    border-radius: 40px;
-    cursor: pointer;
+    border-radius: 20px;
     font-family: $font-family-bold;
+    color: $white;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 16px;
+
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+      height: 128px;
+      background: #6A48DC;
+      box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+      border-radius: 40px;
+      font-size: 24px;
+    }
+
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+      width: 50%;
+      height: 128px;
+      border-radius: 40px;
+      background: #FFFFFF;
+      box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+      border: none;
+      cursor: pointer;
+      font-size: 24px;
+      color: $black;
+    }
   }
 
   &__button-text {
-    @extend .col-sm-12;
-    margin-top: 59px;
-    margin-bottom: 614px;
-    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
     font-family: $font-family;
-    font-size: 18px;
+    font-size: 14px;
+
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+      width: 90%;
+      margin-top: 59px;
+      margin-bottom: 614px;
+      margin-left: 10px;
+      font-size: 18px;
+    }
 
     &--condition {
-      @extend .col-sm-3;
+      align-items: center;
     }
   }
 
   &__button-textlink {
     text-decoration: none;
     color: #6A48DC;
+    font-size: 14px;
+
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+      font-size: 18px;
+    }
   }
 }

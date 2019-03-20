@@ -994,7 +994,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   margin-left: 0px;
   margin-right: 0px; }
 
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .orderform__button-text--condition, .col-sm-4, .orderform__button-button, .col-sm-5, .orderform__form-input:nth-child(1), .orderform__form-input:nth-child(2), .orderform__form-input:nth-child(3), .col-sm-6, .header__tel, .header__nav, .col-sm-7, .orderform__title, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .orderform__form-input:nth-child(4), .col-sm-12, .orderform__form, .orderform__button, .orderform__button-text, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lgx-1, .col-lgx-2, .col-lgx-3, .col-lgx-4, .col-lgx-5, .col-lgx-6, .col-lgx-7, .col-lgx-8, .col-lgx-9, .col-lgx-10, .col-lgx-11, .col-lgx-12, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .header__tel, .header__nav, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lgx-1, .col-lgx-2, .col-lgx-3, .col-lgx-4, .col-lgx-5, .col-lgx-6, .col-lgx-7, .col-lgx-8, .col-lgx-9, .col-lgx-10, .col-lgx-11, .col-lgx-12, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
   position: relative;
   float: left;
   min-height: 1px;
@@ -1102,7 +1102,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     width: 16.66667%; } }
 
 @media (min-width: 768px) {
-  .col-sm-3, .orderform__button-text--condition {
+  .col-sm-3 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 25%;
             flex: 0 0 25%;
@@ -1110,7 +1110,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     width: 25%; } }
 
 @media (min-width: 768px) {
-  .col-sm-4, .orderform__button-button {
+  .col-sm-4 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 33.33333%;
             flex: 0 0 33.33333%;
@@ -1118,7 +1118,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     width: 33.33333%; } }
 
 @media (min-width: 768px) {
-  .col-sm-5, .orderform__form-input:nth-child(1), .orderform__form-input:nth-child(2), .orderform__form-input:nth-child(3) {
+  .col-sm-5 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 41.66667%;
             flex: 0 0 41.66667%;
@@ -1134,7 +1134,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     width: 50%; } }
 
 @media (min-width: 768px) {
-  .col-sm-7, .orderform__title {
+  .col-sm-7 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 58.33333%;
             flex: 0 0 58.33333%;
@@ -1166,7 +1166,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     width: 83.33333%; } }
 
 @media (min-width: 768px) {
-  .col-sm-11, .orderform__form-input:nth-child(4) {
+  .col-sm-11 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 91.66667%;
             flex: 0 0 91.66667%;
@@ -1174,7 +1174,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     width: 91.66667%; } }
 
 @media (min-width: 768px) {
-  .col-sm-12, .orderform__form, .orderform__button, .orderform__button-text {
+  .col-sm-12 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
@@ -2550,74 +2550,171 @@ pre {
     font-size: 20px;
     line-height: 1.7; }
 
-.orderform__title {
-  margin-top: 200px;
-  margin-bottom: 143px;
-  font-family: Ubuntu-Bold, sans-serif;
-  font-size: 72px; }
+.orderform {
+  padding: 0 20px; }
+  .orderform__title {
+    padding: 0 20px;
+    font-family: Ubuntu-Bold, sans-serif;
+    font-size: 30px; }
+    @media (min-width: 768px) {
+      .orderform__title {
+        margin-bottom: 166px;
+        font-size: 72px; } }
+  .orderform__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px; }
+    @media (min-width: 768px) {
+      .orderform__form {
+        margin-bottom: 110px; } }
+    @media (min-width: 1200px) {
+      .orderform__form {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
+  .orderform__form-input {
+    width: 95%;
+    margin-bottom: 100px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    color: #232323;
+    opacity: 0.5;
+    font-family: Ubuntu-Regular, sans-serif;
+    font-size: 14px; }
+    @media (min-width: 768px) {
+      .orderform__form-input {
+        font-size: 36px; } }
+  @media (min-width: 1200px) {
+    .orderform__form-input:nth-child(1) {
+      width: 43.3%;
+      margin-right: 127px; } }
+  @media (min-width: 1200px) {
+    .orderform__form-input:nth-child(2) {
+      width: 43.3%; } }
+  @media (min-width: 1200px) {
+    .orderform__form-input:nth-child(3) {
+      width: 43.3%; } }
+  @media (min-width: 1200px) {
+    .orderform__form-input:nth-child(4) {
+      width: 100%; } }
+  .orderform__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    @media (min-width: 1200px) {
+      .orderform__button {
+        padding: 0 20px;
+        -webkit-box-align: normal;
+            -ms-flex-align: normal;
+                align-items: normal; } }
+  .orderform__button-button {
+    width: 90%;
+    height: 60px;
+    background: #6A48DC;
+    -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    font-family: Ubuntu-Bold, sans-serif;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px; }
+    @media (min-width: 768px) {
+      .orderform__button-button {
+        height: 128px;
+        background: #6A48DC;
+        -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+                box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+        border-radius: 40px;
+        font-size: 24px; } }
+    @media (min-width: 1200px) {
+      .orderform__button-button {
+        width: 50%;
+        height: 128px;
+        border-radius: 40px;
+        background: #FFFFFF;
+        -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+                box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+        border: none;
+        cursor: pointer;
+        font-size: 24px;
+        color: #232323; } }
+  .orderform__button-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    font-family: Ubuntu-Regular, sans-serif;
+    font-size: 14px; }
+    @media (min-width: 768px) {
+      .orderform__button-text {
+        width: 90%;
+        margin-top: 59px;
+        margin-bottom: 614px;
+        margin-left: 10px;
+        font-size: 18px; } }
+    .orderform__button-text--condition {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+  .orderform__button-textlink {
+    text-decoration: none;
+    color: #6A48DC;
+    font-size: 14px; }
+    @media (min-width: 768px) {
+      .orderform__button-textlink {
+        font-size: 18px; } }
 
-.orderform__form {
-  height: 546px;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
-  padding-top: 60px;
-  margin-bottom: 110px; }
-
-.orderform__form-input {
-  border: none;
-  background-color: transparent;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  color: #232323;
-  opacity: 0.5;
-  font-family: Ubuntu-Regular, sans-serif;
-  font-size: 36px; }
-
-.orderform__form-input:nth-child(1) {
-  margin-right: 127px; }
-
-.orderform__form-input:nth-child(3) {
-  margin-top: 147px;
-  padding-top: 30px; }
-
-.orderform__form-input:nth-child(4) {
-  margin-top: 147px;
-  padding-top: 50px; }
-
-.orderform__button {
-  margin-top: 20px; }
-
-.orderform__button-button {
-  height: 128px;
-  background: #FFFFFF;
-  -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
-  border: none;
-  border-radius: 40px;
-  cursor: pointer;
-  font-family: Ubuntu-Bold, sans-serif;
-  font-weight: 700;
-  font-size: 24px; }
-
-.orderform__button-text {
-  margin-top: 59px;
-  margin-bottom: 614px;
-  margin-left: 10px;
-  font-family: Ubuntu-Regular, sans-serif;
-  font-size: 18px; }
-
-.orderform__button-textlink {
-  text-decoration: none;
-  color: #6A48DC; }
-
-.footer__tel a {
-  text-decoration: none;
-  opacity: 0.52;
-  font-family: Ubuntu-Regular, sans-serif;
-  font-size: 24px; }
-
-.footer__adress {
-  opacity: 0.52;
-  font-family: Ubuntu-Regular, sans-serif;
-  font-size: 24px; }
+.footer {
+  margin-bottom: 423px;
+  display: block;
+  text-align: center; }
+  .footer__tel {
+    padding-bottom: 31px; }
+  .footer__tel a {
+    text-decoration: none;
+    opacity: 0.52;
+    font-family: Ubuntu-Regular, sans-serif;
+    font-size: 24px; }
+  .footer__adress {
+    width: 65%;
+    margin: 0 auto;
+    opacity: 0.52;
+    font-family: Ubuntu-Regular, sans-serif;
+    font-size: 24px; }
+    @media (min-width: 992px) {
+      .footer__adress {
+        width: 50%; } }
 
 /*# sourceMappingURL=style.css.map */

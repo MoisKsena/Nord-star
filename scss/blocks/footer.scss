@@ -1,10 +1,11 @@
 .footer {
+  margin-bottom: 423px;
+  display: block;
+  text-align: center;
   
 
-  
-  
   &__tel {
-   
+   padding-bottom: 31px;
   }
 
   &__tel a{
@@ -15,10 +16,15 @@
   }
 
   &__adress {
-    
+    width: 65%;
+    margin: 0 auto;
     opacity: 0.52;
     font-family: $font-family;
     font-size: $font-size-xs;
+
+    @media (min-width: map-get($grid-breakpoints, md)) {
+      width: 50%;
+    }
     
   }
 }
