@@ -1,11 +1,41 @@
 .footer {
-  margin-bottom: 423px;
-  display: block;
+  //display: flex;
+
   text-align: center;
-  
+
+  background-image: url('../img/orderform.svg');
+  background-repeat: no-repeat;
+  background-size: 160%;
+  background-position-x: 40%;
+  background-position-y: 200%;
+
+  @media (min-width: map-get($grid-breakpoints, sm)) {
+    margin-top: -500px;
+    padding-top: 200px;
+    padding-bottom: 500px;
+    background-size: 150%;
+    background-position-x: 37%;
+    background-position-y: 21%;
+  }
+
+  @media (min-width: map-get($grid-breakpoints, md)) {
+    margin-top: -450px;
+    background-size: 160%;
+    background-position-y: 25%;
+  }
+
+  @media (min-width: map-get($grid-breakpoints, lg)) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    background-image: none;
+  }
 
   &__tel {
-   padding-bottom: 31px;
+    //display: flex;
+    padding-bottom: 31px;
   }
 
   &__tel a{
@@ -16,15 +46,23 @@
   }
 
   &__adress {
-    width: 65%;
-    margin: 0 auto;
+    padding: 0 20px;
     opacity: 0.52;
     font-family: $font-family;
     font-size: $font-size-xs;
+    padding-bottom: 425px;
+
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+      padding: 0 120px;
+    }
 
     @media (min-width: map-get($grid-breakpoints, md)) {
-      width: 50%;
+      padding: 0 250px;
     }
     
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+      padding: 0;
+      
+    }
   }
 }

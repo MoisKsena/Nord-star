@@ -2552,6 +2552,18 @@ pre {
 
 .orderform {
   padding: 0 20px; }
+  @media (min-width: 1200px) {
+    .orderform {
+      background-image: url("../img/orderform.svg");
+      background-repeat: no-repeat;
+      background-size: 60%;
+      background-position: 100% 80%; } }
+  @media (min-width: 1440px) {
+    .orderform {
+      background-size: 50%; } }
+  @media (min-width: 1920px) {
+    .orderform {
+      background-position: 100% 100%; } }
   .orderform__title {
     padding: 0 20px;
     font-family: Ubuntu-Bold, sans-serif;
@@ -2587,7 +2599,8 @@ pre {
             -ms-flex-pack: justify;
                 justify-content: space-between;
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap; } }
+            flex-wrap: wrap;
+        margin-bottom: 0; } }
   .orderform__form-input {
     width: 95%;
     margin-bottom: 100px;
@@ -2635,19 +2648,19 @@ pre {
     width: 90%;
     height: 60px;
     background: #6A48DC;
-    -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
-            box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
+    border: none;
     font-family: Ubuntu-Bold, sans-serif;
     color: #ffffff;
     font-weight: 700;
-    font-size: 16px; }
+    font-size: 16px;
+    cursor: pointer; }
     @media (min-width: 768px) {
       .orderform__button-button {
         height: 128px;
         background: #6A48DC;
-        -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
-                box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
         border-radius: 40px;
         font-size: 24px; } }
     @media (min-width: 1200px) {
@@ -2656,12 +2669,11 @@ pre {
         height: 128px;
         border-radius: 40px;
         background: #FFFFFF;
-        -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
-                box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
-        border: none;
-        cursor: pointer;
         font-size: 24px;
         color: #232323; } }
+    @media (min-width: 1200px) {
+      .orderform__button-button {
+        width: 40%; } }
   .orderform__button-text {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2684,6 +2696,12 @@ pre {
         margin-bottom: 614px;
         margin-left: 10px;
         font-size: 18px; } }
+    @media (min-width: 1200px) {
+      .orderform__button-text {
+        width: 40%;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start; } }
     .orderform__button-text--condition {
       -webkit-box-align: center;
           -ms-flex-align: center;
@@ -2697,9 +2715,39 @@ pre {
         font-size: 18px; } }
 
 .footer {
-  margin-bottom: 423px;
-  display: block;
-  text-align: center; }
+  text-align: center;
+  background-image: url("../img/orderform.svg");
+  background-repeat: no-repeat;
+  background-size: 160%;
+  background-position-x: 40%;
+  background-position-y: 200%; }
+  @media (min-width: 768px) {
+    .footer {
+      margin-top: -500px;
+      padding-top: 200px;
+      padding-bottom: 500px;
+      background-size: 150%;
+      background-position-x: 37%;
+      background-position-y: 21%; } }
+  @media (min-width: 992px) {
+    .footer {
+      margin-top: -450px;
+      background-size: 160%;
+      background-position-y: 25%; } }
+  @media (min-width: 1200px) {
+    .footer {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin-bottom: 20px;
+      padding-bottom: 0;
+      background-image: none; } }
   .footer__tel {
     padding-bottom: 31px; }
   .footer__tel a {
@@ -2708,13 +2756,19 @@ pre {
     font-family: Ubuntu-Regular, sans-serif;
     font-size: 24px; }
   .footer__adress {
-    width: 65%;
-    margin: 0 auto;
+    padding: 0 20px;
     opacity: 0.52;
     font-family: Ubuntu-Regular, sans-serif;
-    font-size: 24px; }
+    font-size: 24px;
+    padding-bottom: 425px; }
+    @media (min-width: 768px) {
+      .footer__adress {
+        padding: 0 120px; } }
     @media (min-width: 992px) {
       .footer__adress {
-        width: 50%; } }
+        padding: 0 250px; } }
+    @media (min-width: 1200px) {
+      .footer__adress {
+        padding: 0; } }
 
 /*# sourceMappingURL=style.css.map */
