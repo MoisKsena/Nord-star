@@ -47,13 +47,13 @@
   }
 
   &__text {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
+    // display: flex;
+    // flex-wrap: nowrap;
+    // overflow-x: auto;
 
     // display: block;
     // overflow-x: auto;
-    overflow-x: scroll;
+    //overflow-x: scroll;
     
     // @media (min-width: map-get($grid-breakpoints, sm)) {
       
@@ -61,30 +61,30 @@
     //   overflow-x: scroll;
     // }
 
-    // @media (min-width: map-get($grid-breakpoints, lg)) {
+    @media (min-width: map-get($grid-breakpoints, lg)) {
      
-    // }
+    }
   }
 
   &__item {
-    flex-basis: 100%;
-    min-width: 100%;
+    //flex-basis: 100%;
+    //min-width: 90%;
     //display: block;
   }
 
-  &__item:nth-child(2) {
+  // &__item:nth-child(2) {
 
-    @media (min-width: map-get($grid-breakpoints, lg)) {
-      display: none;
-    }
-  }
+  //   @media (min-width: map-get($grid-breakpoints, lg)) {
+  //     display: none;
+  //   }
+  // }
 
-  &__item:nth-child(3) {
+  // &__item:nth-child(3) {
 
-    @media (min-width: map-get($grid-breakpoints, lg)) {
-      display: none;
-    }
-  }
+  //   @media (min-width: map-get($grid-breakpoints, lg)) {
+  //     display: none;
+  //   }
+  // }
 
   &__item-title {
     font-family: $font-family-bold;

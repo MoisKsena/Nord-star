@@ -15,7 +15,19 @@
              $('#sticker').addClass('bottom');
         }
     });
+
+    $('.feedback__text').slick();
+    // $('.feedback__text').slick({
+    //   dots: true,
+    //   infinite: true,
+    //   speed: 300,
+    //   slidesToShow: 1,
+    //   adaptiveHeight: true
+    // });
+   
+   
   });
 
 
 AOS.init();
+

@@ -2518,24 +2518,6 @@ pre {
     @media (min-width: 1200px) {
       .feedback__reviews-sign {
         display: none; } }
-  .feedback__text {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    overflow-x: auto;
-    overflow-x: scroll; }
-  .feedback__item {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    min-width: 100%; }
-  @media (min-width: 1200px) {
-    .feedback__item:nth-child(2) {
-      display: none; } }
-  @media (min-width: 1200px) {
-    .feedback__item:nth-child(3) {
-      display: none; } }
   .feedback__item-title {
     font-family: Ubuntu-Bold, sans-serif;
     font-size: 30px; }
