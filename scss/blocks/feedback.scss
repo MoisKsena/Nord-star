@@ -1,5 +1,5 @@
 .feedback {
-  @extend .row;
+ // @extend .row;
   display: block;
   padding: 0 20px;
 
@@ -47,9 +47,13 @@
   }
 
   &__text {
-
-    display: block;
+    display: flex;
+    flex-wrap: nowrap;
     overflow-x: auto;
+
+    // display: block;
+    // overflow-x: auto;
+    overflow-x: scroll;
     
     // @media (min-width: map-get($grid-breakpoints, sm)) {
       
@@ -63,7 +67,9 @@
   }
 
   &__item {
-    display: block;
+    flex-basis: 100%;
+    min-width: 100%;
+    //display: block;
   }
 
   &__item:nth-child(2) {
