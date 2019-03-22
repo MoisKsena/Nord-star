@@ -1,5 +1,4 @@
 .feedback {
- // @extend .row;
   display: block;
   padding: 0 20px;
 
@@ -18,18 +17,12 @@
   &__reviews {  
     margin-bottom: 100px;
     padding: 0 20px;
-
-    
   }
 
   &__reviews-title {
     padding-bottom: 20px;
     font-family: $font-family-bold;
     font-size: 30px;
-
-    @media (min-width: map-get($grid-breakpoints, sm)) {
-
-    }
 
     @media (min-width: map-get($grid-breakpoints, lg)) {
       font-size: 64px;
@@ -47,19 +40,7 @@
   }
 
   &__text {
-    // display: flex;
-    // flex-wrap: nowrap;
-    // overflow-x: auto;
-
-    // display: block;
-    // overflow-x: auto;
-    //overflow-x: scroll;
     
-    // @media (min-width: map-get($grid-breakpoints, sm)) {
-      
-    //   margin-top: 170px;
-    //   overflow-x: scroll;
-    // }
 
     @media (min-width: map-get($grid-breakpoints, lg)) {
      
@@ -67,24 +48,8 @@
   }
 
   &__item {
-    //flex-basis: 100%;
-    //min-width: 90%;
-    //display: block;
+    
   }
-
-  // &__item:nth-child(2) {
-
-  //   @media (min-width: map-get($grid-breakpoints, lg)) {
-  //     display: none;
-  //   }
-  // }
-
-  // &__item:nth-child(3) {
-
-  //   @media (min-width: map-get($grid-breakpoints, lg)) {
-  //     display: none;
-  //   }
-  // }
 
   &__item-title {
     font-family: $font-family-bold;

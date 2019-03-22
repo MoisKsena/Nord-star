@@ -16,13 +16,17 @@
         }
     });
 
-    $('.feedback__text').slick();
+    
     $('.feedback__text').slick({
-      dots: true,
+      dots: false,
       infinite: true,
       speed: 300,
       slidesToShow: 1,
-      adaptiveHeight: true
+      adaptiveHeight: true,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      arrow: false
     });
    
    
