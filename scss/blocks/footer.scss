@@ -1,11 +1,10 @@
 .footer {
-  //display: flex;
-
+  
   text-align: center;
   background-image: url('../img/orderform.svg');
   background-repeat: no-repeat;
-  background-size: 160%;
-  background-position-x: 50%;
+  background-size: 150%;
+  background-position-x: 40%;
   background-position-y: 100%;
 
   @media (min-width: map-get($grid-breakpoints, sm)) {
@@ -24,17 +23,31 @@
   }
 
   @media (min-width: map-get($grid-breakpoints, lg)) {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    padding-bottom: 0;
+    margin: 0;
+    padding: 0;
     background-image: none;
   }
 
+  &__content {
+    
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+      height: 100px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
   &__tel {
-    //display: flex;
-    padding-bottom: 31px;
+    padding-bottom: 30px;
+
+    // @media (min-width: map-get($grid-breakpoints, lg)) {
+    //   padding-bottom: 0;
+    // }
   }
 
   &__tel a{
@@ -45,7 +58,6 @@
   }
 
   &__adress {
-    padding: 0 20px;
     opacity: 0.52;
     font-family: $font-family;
     font-size: $font-size-xs;
@@ -60,8 +72,7 @@
     }
     
     @media (min-width: map-get($grid-breakpoints, lg)) {
-      padding: 0;
-      
+      padding: 0; 
     }
   }
 }

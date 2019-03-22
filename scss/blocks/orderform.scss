@@ -1,6 +1,7 @@
 .orderform {
   @extend .row;
   padding: 0 20px;
+  margin-bottom: 50px;
 
   @media (min-width: map-get($grid-breakpoints, lg)) {
     background-image: url('../img/orderform.svg');

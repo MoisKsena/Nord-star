@@ -2540,7 +2540,8 @@ pre {
     line-height: 1.7; }
 
 .orderform {
-  padding: 0 20px; }
+  padding: 0 20px;
+  margin-bottom: 50px; }
   @media (min-width: 1200px) {
     .orderform {
       background-image: url("../img/orderform.svg");
@@ -2708,8 +2709,8 @@ pre {
   text-align: center;
   background-image: url("../img/orderform.svg");
   background-repeat: no-repeat;
-  background-size: 160%;
-  background-position-x: 50%;
+  background-size: 150%;
+  background-position-x: 40%;
   background-position-y: 100%; }
   @media (min-width: 768px) {
     .footer {
@@ -2726,27 +2727,39 @@ pre {
       background-position-y: 25%; } }
   @media (min-width: 1200px) {
     .footer {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      margin-bottom: 20px;
-      padding-bottom: 0;
+      margin: 0;
+      padding: 0;
       background-image: none; } }
+  .footer__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 20px; }
+    @media (min-width: 1200px) {
+      .footer__content {
+        height: 100px;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start; } }
   .footer__tel {
-    padding-bottom: 31px; }
+    padding-bottom: 30px; }
   .footer__tel a {
     text-decoration: none;
     opacity: 0.52;
     font-family: Ubuntu-Regular, sans-serif;
     font-size: 24px; }
   .footer__adress {
-    padding: 0 20px;
     opacity: 0.52;
     font-family: Ubuntu-Regular, sans-serif;
     font-size: 24px;
