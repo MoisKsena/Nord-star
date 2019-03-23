@@ -17,20 +17,26 @@
     });
 
     
-    $('.feedback__text').slick({
-      dots: false,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 1,
-      adaptiveHeight: true,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 4000,
-      arrows: false
-    });
-   
-   
+  $('.feedback__text').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    arrows: false
   });
+
+  //sticky block
+
+  $('#aboutImage').stickySidebar({
+    topSpacing: 60,
+    bottomSpacing: 0
+});  
+
+});
 
 
 AOS.init();
