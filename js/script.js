@@ -32,7 +32,7 @@
   //sticky block
 
   $('#aboutImage').stickySidebar({
-    topSpacing: 60,
+    topSpacing: 100,
     bottomSpacing: 0
 });  
 
