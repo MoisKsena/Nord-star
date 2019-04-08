@@ -1598,14 +1598,14 @@ body {
   @media (min-width: 768px) {
     body {
       background-image: url("../img/woman_mobile.svg"), url("../img/bcgheader_mobil.svg"), url("../img/backgr.svg");
-      background-size: 30%, 120%, 100%;
-      background-position: 100% 1%, 98% 0, 0 0;
+      background-size: 30%, 141%, 100%;
+      background-position: 100% 1%, 0 0, 0 0;
       background-repeat: no-repeat, no-repeat, repeat; } }
   @media (min-width: 992px) {
     body {
       background-image: url("../img/woman_mobile.svg"), url("../img/bcgheader_mobil.svg"), url("../img/backgr.svg");
-      background-size: 30%, 100%, 100%;
-      background-position: 100% 2%, 100% 0, 0 0;
+      background-size: 30%, 141%, 100%;
+      background-position: 100% 2%, 0 0, 0 0;
       background-repeat: no-repeat, no-repeat, repeat; } }
   @media (min-width: 1200px) {
     body {
@@ -1819,7 +1819,8 @@ pre {
 .header {
   height: 140px;
   padding-left: 20px;
-  padding-top: 50px; }
+  padding-top: 50px;
+  position: relative; }
   @media (min-width: 768px) {
     .header {
       padding-top: 103px; } }
@@ -1862,13 +1863,7 @@ pre {
 .promo {
   position: relative;
   padding: 0 20px;
-  height: calc(100vh - 160px); }
-  @media (min-width: 1200px) {
-    .promo {
-      height: calc(100vh - 160px); } }
-  @media (min-width: 1440px) {
-    .promo {
-      height: calc(100vh - 160px); } }
+  height: calc(100vh - 170px); }
   .promo__header {
     width: 70%;
     padding-top: 50px;
