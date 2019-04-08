@@ -1,6 +1,10 @@
 .tariff {
-  margin-top: 240px;
+  margin-top: 20px;
   padding: 0 20px;
+
+  @media (min-width: map-get($grid-breakpoints, md)) {
+    margin-top: 240px;
+  }
 
   &__main {
     padding: 0 20px;

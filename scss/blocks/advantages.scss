@@ -1,6 +1,14 @@
 .advantages {
   padding: 0px 20px;
-  margin-top: 225px;
+  margin-top: 25px;
+
+  @media (min-width: map-get($grid-breakpoints, sm)) {
+    margin-top: 20px;
+  }
+
+  @media (min-width: map-get($grid-breakpoints, lg)) {
+    margin-top: 225px;
+  }
 
   &__title {
     @extend .row;
@@ -31,7 +39,11 @@
   }
 
   &__item {
-    padding-bottom: 163px;
+    padding-bottom: 20px;
+
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+      padding-bottom: 163px;
+    }
   }
 
 
